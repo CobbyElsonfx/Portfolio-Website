@@ -1,7 +1,7 @@
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="mylogo.png" alt="logo" width="140"  height="auto" />
+  <img src="./mylogo.png" alt="logo" width="170"  height="auto" />
   <br/>
 
 
@@ -167,8 +167,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements">ismael Mastronardi</a>
 
-> I would like to thank my Microvese partner who helped me a lot during the project
-
+> I would like to thank my Microvese partner who helped me a lot during the project.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
