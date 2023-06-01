@@ -1,10 +1,13 @@
 
+
+
 .hero {
   width: 100%;
   height: 100vh;
 }
 
 .navbar {
+  padding-top: 3%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,17 +38,48 @@ button > .toggler-icon {
 
 .about-section {
   width: 100%;
-  height: 100vh;
   background-image: url("./assets/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.container-for-about-section{
-    padding-left:6%;
-    padding-right: 6%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.container-for-about-section {
+  padding-top: 70px;
+  padding-left: 6%;
+  padding-right: 6%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.about-section-item{
+    flex:1;
+}
+
+.container-for-about-section .intro {
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 50px;
+  color: #172B4D;
+  flex:1;
+}
+
+.container-for-about-section .profile {
+    font-size: 16px;
+    line-height: 25px;
+    font-style: normal;
+    font-weight: 400;
+    flex: 1;
+
+}
+
+.lets-connect {
+    color: #7F8CFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height:24px;
+    align-self: self-start;
 }
