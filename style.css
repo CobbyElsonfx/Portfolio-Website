@@ -59,8 +59,6 @@ button > .toggler-icon {
   align-items: flex-start;
 }
 
-
-
 .container-for-about-section .intro {
   font-weight: 700;
   margin: 0;
@@ -87,7 +85,6 @@ button > .toggler-icon {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 0px;
 }
 
 .lets-connect {
@@ -102,14 +99,9 @@ button > .toggler-icon {
   font-family: 'Poppins', sans-serif;
 }
 
-.about-section-item .social-media-icons {
+.social-media-icons {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 15px;
-}
-
-.social-media-icons {
   padding: 0;
   list-style: none;
   height: 20px;
