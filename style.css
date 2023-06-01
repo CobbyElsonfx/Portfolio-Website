@@ -111,6 +111,22 @@ div > .about-section-item {
 .first-project {
   padding-left: 6%;
   padding-right: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: space-evenly;
+  background-color: white;
+
+}
+
+.first-project  .snapshot{
+  padding: 0px;
+  box-shadow: 2px;
+}
+
+.first-project .project-details {
+  padding: 7px;
 }
 
 .first-project .project-title {
@@ -138,6 +154,7 @@ div > .about-section-item {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0px;
 }
 
 .first-project .stacks > span {
@@ -157,11 +174,14 @@ div > .about-section-item {
 .first-project button {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color: #396df2;
   background-color: white;
   border-style: solid;
   border-width: 1px;
-  border-radius: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 6px;
+  font-style: normal;
 }
