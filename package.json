@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "<a name=\"readme-top\"></a>",
+  "description": "<div align=\"center\">   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->   <img src=\"./mylogo.png\" alt=\"logo\" width=\"170\"  height=\"auto\" />   <br/>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
