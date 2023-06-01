@@ -4,7 +4,7 @@ body {
 
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 }
 
 .navbar {
@@ -105,4 +105,113 @@ div > .about-section-item {
 .social-media-icons img {
   width: 15px;
   padding: 4px;
+}
+
+/* projects section starts */
+.first-project {
+  margin-top: 15%;
+  padding-left: 6%;
+  padding-right: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: space-evenly;
+  background-color: white;
+  position: relative;
+  width: 85%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.first-project .content-wrapper {
+  padding: 15px 4px 15px 4px;
+}
+
+.first-project .snapshot {
+  padding: 0;
+  box-shadow: 2px;
+}
+
+.first-project .project-details {
+  padding: 10px;
+}
+
+.first-project .project-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 42px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.first-project .sub-title {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.first-project .sub-title > img {
+  width: 8px;
+  height: 8px;
+  align-self: center;
+  padding-bottom: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.first-project .sub-title > span {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.first-project .sub-title > .dev-title,
+.year-produced {
+  font-family: 'Poppins', sans-serif;
+  color: #7a869a;
+}
+
+.first-project .project-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: 'Poppins', sans-serif;
+  word-wrap: break-word;
+}
+
+.first-project .stacks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+.first-project .stacks > span {
+  background-color: #ebebff;
+  min-width: 50px;
+  height: 16px;
+  padding: 4px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+  text-align: center;
+  margin: 4px;
+}
+
+.first-project button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #396df2;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 6px;
+  font-style: normal;
 }
