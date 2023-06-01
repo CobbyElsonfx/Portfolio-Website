@@ -1,4 +1,6 @@
-
+body{
+    box-sizing: border-box;
+}
 
 
 .hero {
@@ -51,15 +53,18 @@ button > .toggler-icon {
   align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  
 }
 
-
-.about-section-item{
-    flex:1;
+div > .about-section-item{
+    margin: 0px;
 }
+
 
 .container-for-about-section .intro {
   font-weight: 700;
+  margin: 0px;
   font-size: 40px;
   font-style: normal;
   line-height: 50px;
@@ -82,4 +87,16 @@ button > .toggler-icon {
     font-size: 16px;
     line-height:24px;
     align-self: self-start;
+}
+
+.about-section-item > .socila-meida-icons{
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start; */
+}
+
+.social-meida-icons  img{
+    width: 15px;
+    padding: 20px;
+    
 }
