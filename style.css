@@ -106,3 +106,9 @@ div > .about-section-item {
   width: 15px;
   padding: 4px;
 }
+
+/* projects section starts */
+.first-project{
+  padding-left: 6%;
+  padding-right: 6%;
+}
