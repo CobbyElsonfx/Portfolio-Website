@@ -1,6 +1,5 @@
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <img src="./assets/mylogo.png" alt="logo" width="170"  height="auto" />
   <br/>
 
@@ -28,7 +27,6 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖Portfolio Website <a name="about-project"></a>
 
@@ -54,13 +52,12 @@
 
 
 
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 > 
 
-- **[It  disaplys the home of the portifolo]**
+- **[It  disaplys the home of the portfolio]**
 - **[Ignore files such as node_modules]**
 - **[Uses Linters for writing quality]**
 
