@@ -1,10 +1,8 @@
+
 body {
   box-sizing: border-box;
-}
-
-.hero {
-  width: 100%;
-  height: 80vh;
+  width: 100vw;
+  height: 100%;
 }
 
 .navbar {
@@ -20,14 +18,16 @@ body {
 .logo {
   color: #6070ff;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
+  text-decoration: none;
 }
 
 .hamburger-btn {
   background: none;
   border: none;
   padding: 0;
+  padding-right: 7%;
   cursor: pointer;
 }
 
@@ -41,7 +41,9 @@ button > .toggler-icon {
 }
 
 .about-section {
-  width: 100%;
+  padding-top: 20%;
+  width: 97%;
+  height: 100%;
   background-image: url("./assets/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,9 +59,7 @@ button > .toggler-icon {
   align-items: flex-start;
 }
 
-div > .about-section-item {
-  margin: 0;
-}
+
 
 .container-for-about-section .intro {
   font-weight: 700;
@@ -76,10 +76,18 @@ div > .about-section-item {
   font-size: 16px;
   line-height: 25px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
+  color: #344563;
   flex: 1;
   margin-bottom: 15px;
   font-family: 'Poppins', sans-serif;
+}
+
+.about-section-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px;
 }
 
 .lets-connect {
@@ -97,14 +105,44 @@ div > .about-section-item {
 .about-section-item .social-media-icons {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: flex-start;
   margin-top: 15px;
-  justify-content: space-between;
 }
 
-.social-media-icons img {
-  width: 15px;
-  padding: 4px;
+.social-media-icons {
+  padding: 0;
+  list-style: none;
+  height: 20px;
+  width: 170px;
+}
+
+.social-media-icons li {
+  width: 17px;
+  padding: 10px;
+  height: 14px;
+}
+
+.social-media-icons .twohandicon {
+  width: 14px;
+  height: 20px;
+}
+
+.social-media-icons .socialIcon {
+  padding-top: 1px;
+  width: 20px;
+  height: 19px;
+  padding-bottom: -2px;
+}
+
+.social-media-icons .git {
+  width: 18px;
+  height: 20px;
+}
+
+.social-media-icons .twitter {
+  width: 19px;
+  height: 19px;
+  padding-left: 0;
 }
 
 /* projects section starts */
