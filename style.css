@@ -4,7 +4,7 @@ body {
 
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 }
 
 .navbar {
@@ -109,6 +109,7 @@ div > .about-section-item {
 
 /* projects section starts */
 .first-project {
+  margin-top: 15%;
   padding-left: 6%;
   padding-right: 6%;
   display: flex;
@@ -117,16 +118,22 @@ div > .about-section-item {
   border-radius: 15px;
   justify-content: space-evenly;
   background-color: white;
-
+  position: relative;
+  width: 85%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.first-project  .snapshot{
-  padding: 0px;
+.first-project .content-wrapper {
+  padding: 15px 4px 15px 4px;
+}
+
+.first-project .snapshot {
+  padding: 0;
   box-shadow: 2px;
 }
 
 .first-project .project-details {
-  padding: 7px;
+  padding: 10px;
 }
 
 .first-project .project-title {
@@ -140,6 +147,29 @@ div > .about-section-item {
 .first-project .sub-title {
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+
+.first-project .sub-title > img {
+  width: 8px;
+  height: 8px;
+  align-self: center;
+  padding-bottom: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.first-project .sub-title > span {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.first-project .sub-title > .dev-title,
+.year-produced {
+  font-family: 'Poppins', sans-serif;
+  color: #7a869a;
 }
 
 .first-project .project-description {
@@ -154,7 +184,7 @@ div > .about-section-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
 }
 
 .first-project .stacks > span {
