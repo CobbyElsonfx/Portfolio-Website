@@ -1,7 +1,6 @@
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
 }
-
 
 .hero {
   width: 100%;
@@ -20,6 +19,9 @@ body{
 
 .logo {
   color: #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .hamburger-btn {
@@ -50,53 +52,57 @@ button > .toggler-icon {
   padding-top: 70px;
   padding-left: 6%;
   padding-right: 6%;
-  align-items: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
 }
 
-div > .about-section-item{
-    margin: 0px;
+div > .about-section-item {
+  margin: 0;
 }
-
 
 .container-for-about-section .intro {
   font-weight: 700;
-  margin: 0px;
+  margin: 0;
   font-size: 40px;
   font-style: normal;
   line-height: 50px;
-  color: #172B4D;
-  flex:1;
+  color: #172b4d;
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container-for-about-section .profile {
-    font-size: 16px;
-    line-height: 25px;
-    font-style: normal;
-    font-weight: 400;
-    flex: 1;
-
+  font-size: 16px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 400;
+  flex: 1;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .lets-connect {
-    color: #7F8CFF;
-    font-weight: 500;
-    font-size: 16px;
-    line-height:24px;
-    align-self: self-start;
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-self: self-start;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.about-section-item > .socila-meida-icons{
-    /* display: flex;
-    flex-direction: row;
-    align-items: flex-start; */
+.about-section-item .social-media-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 15px;
+  justify-content: space-between;
 }
 
-.social-meida-icons  img{
-    width: 15px;
-    padding: 20px;
-    
+.social-media-icons img {
+  width: 15px;
+  padding: 4px;
 }
