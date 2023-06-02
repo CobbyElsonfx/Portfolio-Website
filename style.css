@@ -158,7 +158,7 @@ button > .toggler-icon {
 }
 
 /* projects section starts */
-.first-project {
+.my-individual-project{
   margin: auto;
   position: relative;
   margin-top: 20%;
@@ -174,20 +174,20 @@ button > .toggler-icon {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.first-project .content-wrapper {
+.my-individual-project .content-wrapper {
   padding: 15px 4px 15px 4px;
 }
 
-.first-project .snapshot {
+.my-individual-project .snapshot {
   padding: 0;
   box-shadow: 2px;
 }
 
-.first-project .project-details {
+.my-individual-project .project-details {
   padding: 10px;
 }
 
-.first-project .project-title {
+.my-individual-project .project-title {
   font-size: 32px;
   font-style: normal;
   font-weight: 900;
@@ -195,13 +195,13 @@ button > .toggler-icon {
   font-family: 'Poppins', sans-serif;
 }
 
-.first-project .sub-title {
+.my-individual-project .sub-title {
   display: flex;
   flex-direction: row;
   position: relative;
 }
 
-.first-project .sub-title > img {
+.my-individual-project .sub-title > img {
   width: 8px;
   height: 8px;
   align-self: center;
@@ -210,20 +210,20 @@ button > .toggler-icon {
   padding-right: 7px;
 }
 
-.first-project .sub-title > span {
+.my-individual-project .sub-title > span {
   font-size: 13px;
   font-weight: 600;
   line-height: 12px;
   font-family: 'Poppins', sans-serif;
 }
 
-.first-project .sub-title > .dev-title,
+.my-individual-project .sub-title > .dev-title,
 .year-produced {
   font-family: 'Poppins', sans-serif;
   color: #7a869a;
 }
 
-.first-project .project-description {
+.my-individual-project .project-description {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
@@ -231,14 +231,14 @@ button > .toggler-icon {
   word-wrap: break-word;
 }
 
-.first-project .stacks {
+.my-individual-project .stacks {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0;
 }
 
-.first-project .stacks > span {
+.my-individual-project .stacks > span {
   background-color: #ebebff;
   min-width: 50px;
   height: 16px;
@@ -252,7 +252,7 @@ button > .toggler-icon {
   margin: 4px;
 }
 
-.first-project button {
+.my-individual-project button {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
