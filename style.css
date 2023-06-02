@@ -3,6 +3,15 @@ body {
   box-sizing: border-box;
   width: 100vw;
   height: 100%;
+  background-color: #efefef;
+  overflow-x: hidden;
+}
+
+.header-and-headline-section {
+  background-color: #fff;
+  border-bottom-left-radius: 10%;
+  width: 100vw;
+  height: 90vh;
 }
 
 .navbar {
@@ -13,6 +22,7 @@ body {
   position: static;
   padding-left: 6%;
   padding-right: 6%;
+  margin-bottom: 6%;
 }
 
 .logo {
@@ -27,7 +37,7 @@ body {
   background: none;
   border: none;
   padding: 0;
-  padding-right: 7%;
+  padding-right: 6%;
   cursor: pointer;
 }
 
@@ -41,19 +51,26 @@ button > .toggler-icon {
 }
 
 .about-section {
-  padding-top: 20%;
-  width: 97%;
-  height: 100%;
-  background-image: url("./assets/header-shapes\ mobile.png");
+  background-position: absolute;
+  background-image: url("./assets//header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 39.296875em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.125em 1.5em;
+  gap: 0.75em;
+  width: 90vw;
+  height: 38.75em;
+  left: -7em;
+  top: 10.75em;
+  padding-bottom: 5px;
 }
 
 .container-for-about-section {
   padding-top: 70px;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 3px;
+  padding-right: 3px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -64,6 +81,7 @@ button > .toggler-icon {
   margin: 0;
   font-size: 40px;
   font-style: normal;
+  padding-right: 10px;
   line-height: 50px;
   color: #172b4d;
   flex: 1;
@@ -72,7 +90,7 @@ button > .toggler-icon {
 
 .container-for-about-section .profile {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 24px;
   font-style: normal;
   font-weight: 300;
   color: #344563;
@@ -94,8 +112,8 @@ button > .toggler-icon {
   line-height: 24px;
   align-self: self-start;
   text-decoration: none;
-  margin-top: 10px;
-  margin-bottom: 3px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -106,11 +124,13 @@ button > .toggler-icon {
   list-style: none;
   height: 20px;
   width: 170px;
+  margin-left: -10px;
 }
 
 .social-media-icons li {
   width: 17px;
   padding: 10px;
+  padding-top: 0;
   height: 14px;
 }
 
@@ -134,21 +154,22 @@ button > .toggler-icon {
 .social-media-icons .twitter {
   width: 19px;
   height: 19px;
-  padding-left: 0;
+  padding: 0;
 }
 
 /* projects section starts */
 .first-project {
-  margin-top: 15%;
-  padding-left: 6%;
-  padding-right: 6%;
+  margin: auto;
+  position: relative;
+  margin-top: 20%;
+  padding-left: 2%;
+  padding-right: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
   justify-content: space-evenly;
   background-color: white;
-  position: relative;
   width: 85%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
