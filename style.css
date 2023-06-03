@@ -263,7 +263,7 @@ button > .toggler-icon {
   padding: 0;
 }
 
-.my-individual-project .stacks > span {
+.my-individual-project .stacks > li {
   background-color: #ebebff;
   min-width: 50px;
   height: 16px;
