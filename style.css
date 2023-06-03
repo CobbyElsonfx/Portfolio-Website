@@ -4,20 +4,23 @@ body {
   width: 100vw;
   height: 100%;
   background-color: #efefef;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 
-h1{
+h1 {
   font-weight: 700;
 }
 
-p{
+p {
   font-weight: 400;
 }
 
+li {
+  list-style: none;
+}
 
 button {
-  font-family: 'Poppins', sans-serif;
   padding: 10px 7px 10px 7px;
   font-weight: 500;
   font-size: 17px;
@@ -27,9 +30,10 @@ button {
   border-style: solid;
   border-width: 1px;
   border-radius: 6px;
-  border-color: #396df2 ;
+  border-color: #396df2;
   margin-top: 20px;
   font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 .header-and-headline-section {
@@ -79,7 +83,7 @@ button > .toggler-icon {
   background-position: absolute;
   background-image: url("./assets//header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  background-size: 100% 39.296875em;
+  background-size: 100% 37.296875em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -109,7 +113,6 @@ button > .toggler-icon {
   line-height: 50px;
   color: #172b4d;
   flex: 1;
-  font-family: 'Poppins', sans-serif;
 }
 
 .container-for-about-section .profile {
@@ -281,17 +284,87 @@ button > .toggler-icon {
   border-top-right-radius: 10%;
   margin-top: 20%;
   display: grid;
-  grid-template-rows: ;
-
-
+  grid-template-rows:1fr 1fr;
+  padding-bottom: 20%;
 }
 
-
-
-.about-myself-and-skill-list-section 
-.about-myself-section {
+.about-myself-and-skill-list-section .about-myself-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding:7%;
+  padding: 7%;
+}
+
+.about-myself-and-skill-list-section .languages-framework-skills {
+  flex-direction: column;
+  position: relative;
+}
+
+.languages-framework-skills .list-title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0;
+  margin: 0 0 0 0;
+  padding-bottom: 0;
+  padding-left: 7%;
+  padding-right: 7%;
+  max-width: 85vw;
+}
+
+.languages-framework-skills .separator > img {
+  margin: auto;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.languages-framework-skills > ul > li > h2 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;
+}
+
+.languages-framework-skills .list-title .arrowdown,
+.arrowright {
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+.languages-framework-skills .languages-list-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: start;
+  padding: 12px;
+  margin: 0;
+}
+
+.languages-list-items-container .languages-list-items {
+  margin-left: 3%;
+}
+
+.languages-list-items-container .languages-list-items > div {
+  display: flex;
+  flex-direction: row;
+  min-width: 85vw;
+  height: 66.72px;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  gap: 12px;
+}
+
+.languages-list-items-container .languages-list-items > div > h2 {
+  font-size: 15px;
+  font-style: normal;
+  padding-top: 3%;
+  font-weight: 500;
+  color:#253858;
+}
+
+.languages-list-items-container .languages-list-items > div img {
+  padding-top: 0.4em;
+  padding-left: 0.6em;
 }
