@@ -58,6 +58,48 @@ button {
   padding-right: 6%;
   margin-bottom: 6%;
 }
+/* hide the desttop nav items on smaller screens */
+.navbar .desktop-nav-items {
+  display:none;
+}
+@media (width >= 768px){
+  .navbar .desktop-nav-items{
+    display:block;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+  }
+
+  .navbar .desktop-nav-items li{
+    padding:0px 10px 0px 0px;
+    font-weight:500;
+    color:#344563;
+
+  }
+
+  /* hides hamburger on larger screens */
+  .hamburger-btn{
+    display:none;
+  }
+
+
+  .about-section {
+    background-position: absolute;
+    background-image: url("./assets/jh.png");
+    background-repeat: no-repeat;
+    background-size: 100% 37.296875em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.125em 1.5em;
+    gap: 0.75em;
+    width: 90vw;
+    height: 38.75em;
+    left: -7em;
+    top: 10.75em;
+    padding-bottom: 5px;
+  }
+}
 
 .logo {
   color: #6070ff;
@@ -83,7 +125,7 @@ button > .toggler-icon {
   margin-bottom: 4px;
   color: white;
 }
-
+ 
 .about-section {
   background-position: absolute;
   background-image: url("./assets//header-shapes\ mobile.png");
