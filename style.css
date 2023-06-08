@@ -6,6 +6,7 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
+
 /* mobile first */
 h1 {
   font-weight: 700;
@@ -41,8 +42,6 @@ button {
   width: 100vw;
   height: 80vh;
 }
-
-
 
 .navbar {
   padding-top: 3%;
@@ -455,5 +454,3 @@ textarea {
   height: 48px;
   border: none;
 }
-
-
