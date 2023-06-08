@@ -315,14 +315,15 @@
       </div>
     </section>
 
-    <section id="form-container">
-      <div>
-        <h2>Contact me</h2>
+    <section id="form_container">
+      <form>
+        <h2>Contact</h2>
         <p>
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it!
         </p>
+
       <form 
         action="https://formspree.io/f/mdovrprr"
         method="POST">
@@ -352,5 +353,18 @@
       </div>
     </section>
     </div>
+        <input type="text" maxlength="30" required />
+        <input type="email" required />
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          maxlength="500"
+          required
+        ></textarea>
+        <button class="card_btn">Get in touch</button>
+      </form>
+    </section>
+
   </body>
 </html>
