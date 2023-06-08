@@ -1,9 +1,8 @@
-
 body {
   box-sizing: border-box;
   height: 100%;
   background-color: #efefef;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
@@ -34,6 +33,12 @@ button {
   margin-top: 20px;
   font-style: normal;
   letter-spacing: 0.03em;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #6070ff;
+  color: white;
 }
 
 .header-and-headline-section {
@@ -56,7 +61,7 @@ button {
 
 .logo {
   color: #6070ff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 17px;
   text-decoration: none;
@@ -122,7 +127,7 @@ button > .toggler-icon {
   color: #344563;
   flex: 1;
   margin-bottom: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .about-section-item {
@@ -140,7 +145,7 @@ button > .toggler-icon {
   text-decoration: none;
   margin-top: 2px;
   margin-bottom: 2px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .social-media-icons {
@@ -218,7 +223,7 @@ button > .toggler-icon {
   font-style: normal;
   font-weight: 900;
   line-height: 42px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .my-individual-project .sub-title {
@@ -240,19 +245,19 @@ button > .toggler-icon {
   font-size: 13px;
   font-weight: 600;
   line-height: 12px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .my-individual-project .sub-title > .dev-title,
 .year-produced {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #7a869a;
 }
 
 .my-individual-project .project-description {
   font-size: 15px;
   line-height: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   word-wrap: break-word;
 }
 
@@ -268,7 +273,7 @@ button > .toggler-icon {
   min-width: 50px;
   height: 16px;
   padding: 4px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 8px;
   font-weight: 500;
   font-size: 12px;
