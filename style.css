@@ -43,7 +43,7 @@ button {
 
 .header-and-headline-section {
   background-color: #fff;
-  border-bottom-left-radius: 10%;
+  border-bottom-left-radius: 6rem;
   width: 100vw;
   height: 80vh;
 }
@@ -285,10 +285,10 @@ button > .toggler-icon {
 /* about my self and skill list section */
 #wrapper-for-about-self-and-contact-form {
   background-color: white;
+  border-top-right-radius: 6rem;
 }
 
 .about-myself-and-skill-list-section {
-  border-top-right-radius: 10%;
   margin-top: 20%;
   padding-bottom: 20%;
   height: 100%;
@@ -387,7 +387,7 @@ button > .toggler-icon {
 
 #form-container {
   height: fit-content;
-  border-top-left-radius: 10%;
+  border-top-left-radius: 6rem;
   background-color: #6060ff;
   margin-top: 0;
   padding: 0 0 0 0;
