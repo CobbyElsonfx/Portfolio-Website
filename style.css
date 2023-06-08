@@ -1,10 +1,9 @@
-
 body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
   background-color: #efefef;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   padding-left: 0;
 }
@@ -39,6 +38,12 @@ button {
   margin-top: 20px;
   font-style: normal;
   letter-spacing: 0.03em;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #6070ff;
+  color: white;
 }
 
 .header-and-headline-section {
@@ -60,28 +65,26 @@ button {
 }
 /* hide the desttop nav items on smaller screens */
 .navbar .desktop-nav-items {
-  display:none;
+  display: none;
 }
-@media (width >= 768px){
-  .navbar .desktop-nav-items{
-    display:block;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
+@media (width >= 768px) {
+  .navbar .desktop-nav-items {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .navbar .desktop-nav-items li{
-    padding:0px 10px 0px 0px;
-    font-weight:500;
-    color:#344563;
-
+  .navbar .desktop-nav-items li {
+    padding: 0px 10px 0px 0px;
+    font-weight: 500;
+    color: #344563;
   }
 
   /* hides hamburger on larger screens */
-  .hamburger-btn{
-    display:none;
+  .hamburger-btn {
+    display: none;
   }
-
 
   .about-section {
     background-position: absolute;
@@ -103,7 +106,7 @@ button {
 
 .logo {
   color: #6070ff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 17px;
   text-decoration: none;
@@ -125,7 +128,7 @@ button > .toggler-icon {
   margin-bottom: 4px;
   color: white;
 }
- 
+
 .about-section {
   background-position: absolute;
   background-image: url("./assets//header-shapes\ mobile.png");
@@ -169,7 +172,7 @@ button > .toggler-icon {
   color: #344563;
   flex: 1;
   margin-bottom: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .about-section-item {
@@ -187,7 +190,7 @@ button > .toggler-icon {
   text-decoration: none;
   margin-top: 2px;
   margin-bottom: 2px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .social-media-icons {
@@ -265,7 +268,7 @@ button > .toggler-icon {
   font-style: normal;
   font-weight: 900;
   line-height: 42px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .my-individual-project .sub-title {
@@ -287,19 +290,19 @@ button > .toggler-icon {
   font-size: 13px;
   font-weight: 600;
   line-height: 12px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .my-individual-project .sub-title > .dev-title,
 .year-produced {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #7a869a;
 }
 
 .my-individual-project .project-description {
   font-size: 15px;
   line-height: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   word-wrap: break-word;
 }
 
@@ -315,7 +318,7 @@ button > .toggler-icon {
   min-width: 50px;
   height: 16px;
   padding: 4px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 8px;
   font-weight: 500;
   font-size: 12px;
