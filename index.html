@@ -205,6 +205,8 @@
         </div>
       </div>
     </section>
+
+    <div id="wrapper-for-about-self-and-contact-form">
     <section>
       <div class="about-myself-and-skill-list-section">
         <div class="about-myself-section">
@@ -268,61 +270,47 @@
         </div>
         <div class="languages-framework-skills">
           <ul class="list-title">
-            <li><h2>Languages</h2></li>
-            <li class="arrowdown">
-              <figcaption>
-                <img src="./assets/arrowdown.png" alt="" />
-              </figcaption>
+            <li>
+              <h2>Languages</h2>
+              <img class="arrowdown" src="./assets/arrowright.png" alt="" />
             </li>
-          </ul>
-          <ul class="languages-list-items-container">
-            <li class="languages-list-items">
-              <div>
-                <figcaption>
+            <ul class="languages-list-items-container">
+              <li class="languages-list-items">
+                <div>
                   <img src="./assets/Javascript_ellipse 1.png" alt="" />
-                </figcaption>
-                <h2>Javascript</h2>
-              </div>
-            </li>
-            <li class="languages-list-items">
-              <div>
-                <figcaption>
-                  <img src="./assets/html_ellipse 1.png" alt="" />
-                </figcaption>
-                <h2>HTML</h2>
-              </div>
-            </li>
-            <li class="languages-list-items">
-              <div>
-                <figcaption>
+                  <h2>Javascript</h2>
+                </div>
+              </li>
+              <li class="languages-list-items">
+                <div>
+                    <img src="./assets/html_ellipse 1.png" alt="" />
+                  <h2>HTML</h2>
+                </div>
+              </li>
+              <li class="languages-list-items">
+                <div>
                   <img src="./assets/cssecllipse.png" alt="" />
-                </figcaption>
-                <h2>CSS</h2>
-              </div>
-            </li>
+                  <h2>CSS</h2>
+                </div>
+              </li>
+            </ul>
           </ul>
+          
           <ul class="list-title">
-            <li><h2>Frameworks</h2></li>
-            <li class="arrowright">
-              <figcaption>
-                <img src="./assets/arrowright.png" alt="" />
-              </figcaption>
+            <li>
+              <h2>Frameworks</h2>
+               <img class="arrowright" src="./assets/arrowright.png" alt="" />
             </li>
           </ul>
-          <span class="separator"
-            ><img src="./assets/Separator Bottom.png" alt=""
-          /></span>
+            <hr class="separator">
           <ul class="list-title">
-            <li><h2>Skills</h2></li>
-            <li class="arrowright">
-              <figcaption>
-                <img src="./assets/arrowright.png" alt="" />
-              </figcaption>
+            <li>
+              <h2>Skills.</h2>
+              <img class="arrowright" src="./assets/arrowright.png" alt="" />
             </li>
           </ul>
-          <span class="separator"
-            ><img src="./assets/Separator Bottom.png" alt=""
-          /></span>
+           <hr class="separator"/>
+    
         </div>
       </div>
     </section>
@@ -335,6 +323,36 @@
           that you need built or a project that needs coding. I’d love to help
           with it!
         </p>
+
+      <form 
+        action="https://formspree.io/f/mdovrprr"
+        method="POST">
+        <ul>
+          <li>
+            <input type="text" maxlength="30"  placeholder="Lorem Ipsum" required />
+          </li>
+          <li>
+            <input type="email" placeholder="loremipsum@gmail.com" required />
+          </li>
+          <li>
+            <textarea
+              name="message"
+              cols="28"
+              rows="7"
+              maxlength="500"
+              required
+              placeholder="Write you message here..."
+            ></textarea>
+          </li>
+          <li>
+            <button type="button">Get in touch</button>
+          </li>
+        </ul>
+      </form>
+      <img src="./assets/Shape.png" alt="bar">
+      </div>
+    </section>
+    </div>
         <input type="text" maxlength="30" required />
         <input type="email" required />
         <textarea
@@ -347,5 +365,6 @@
         <button class="card_btn">Get in touch</button>
       </form>
     </section>
+
   </body>
 </html>
