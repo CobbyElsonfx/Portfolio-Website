@@ -73,10 +73,11 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 90px;
   }
 
   .navbar .desktop-nav-items li {
-    padding: 0px 10px 0px 0px;
+    padding: 0px 15px 0px 0px;
     font-weight: 500;
     color: #344563;
   }
@@ -86,23 +87,225 @@ button:hover {
     display: none;
   }
 
+  .header-and-headline-section {
+    background-color: #fff;
+    border-bottom-left-radius: 6rem;
+    width: 100vw;
+    height: 100vh;
+  }
+
   .about-section {
-    background-position: absolute;
-    background-image: url("./assets/jh.png");
+    top: 20%;
+    left: 1%;
+    position: absolute;
+    background-image: url("./assets/backgroundImage.png");
     background-repeat: no-repeat;
-    background-size: 100% 37.296875em;
+    background-size:97% 42rem;
+    padding: 0 0 3rem 0;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .container-for-about-section {
+    padding-top: 170px;
+    padding-bottom: 150px;
+    padding-right: 3px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0.125em 1.5em;
-    gap: 0.75em;
-    width: 90vw;
-    height: 38.75em;
-    left: -7em;
-    top: 10.75em;
-    padding-bottom: 5px;
+    margin: auto;
+    width: 65%;
   }
+
+  /* desktop intro version */
+  .container-for-about-section .intro {
+    margin: 0;
+    font-size: 48px;
+    font-style: normal;
+    padding-right: 10px;
+    line-height: 60px;
+    color: #172b4d;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    flex: 1;
+  }
+
+
+  .container-for-about-section .profile {
+    font-size: 20px;
+    line-height: 28px;
+    font-style: normal;
+    color: #344563;
+    font-weight: 400;
+    flex: 1;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+
+  .about-section-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+
+  .lets-connect {
+    color: #7f8cff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    align-self: self-start;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* projects display section */
+
+  /* projects section starts */
+  .my-individual-project {
+    margin: auto;
+    position: relative;
+    margin-top: 17%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 15px;
+    background-color: white;
+    width: 70%;
+    height: 56vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .my-individual-project .content-wrapper {
+    padding: 15px 4px 15px 4px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    
+
+  }
+
+  .odd .project-snapshot > img {
+    padding: 0;
+    height: 100%;
+    width: 80%;
+    box-shadow: 2px;
+    order:2;
+    background-color: #344563;
+  }
+
+  .odd .project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    order: 1;
+    background-color: #6060ff;
+  }
+
+  .even .project-snapshot > img {
+    padding: 0;
+    box-shadow: 2px;
+    order: 1;
+  }
+
+  .odd .project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    order: 2;
+  }
+
+  .my-individual-project .project-title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    font-family: "Poppins", sans-serif;
+
+  }
+
+  .my-individual-project .sub-title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .my-individual-project .sub-title > img {
+    width: 8px;
+    height: 8px;
+    align-self: center;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .my-individual-project .sub-title > span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .my-individual-project .sub-title > .dev-title,
+  .year-produced {
+    font-family: "Poppins", sans-serif;
+    color: #7a869a;
+  }
+
+  .my-individual-project .project-description {
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Poppins", sans-serif;
+    word-wrap: break-word;
+    font-weight: 400;
+  }
+
+  .my-individual-project .stacks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  .my-individual-project .stacks > li {
+    background-color: #ebebff;
+    min-width: 50px;
+    height: 16px;
+    padding: 4px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #6070ff;
+    text-align: center;
+    margin: 4px;
+  }
+
+  .about-myself-and-skill-list-section {
+    margin:auto;
+    padding-bottom: 20%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 70%;
+    
+  }
+
+  .about-myself-and-skill-list-section .about-myself-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
 }
+
 
 .logo {
   color: #6070ff;
@@ -129,6 +332,9 @@ button > .toggler-icon {
   color: white;
 }
 
+
+/* for mobile screens */
+@media (width <= 768px){
 .about-section {
   background-position: absolute;
   background-image: url("./assets//header-shapes\ mobile.png");
@@ -165,6 +371,7 @@ button > .toggler-icon {
   flex: 1;
 }
 
+
 .container-for-about-section .profile {
   font-size: 16px;
   line-height: 24px;
@@ -175,11 +382,15 @@ button > .toggler-icon {
   font-family: "Poppins", sans-serif;
 }
 
+
+
 .about-section-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
+
 
 .lets-connect {
   color: #7f8cff;
@@ -193,45 +404,6 @@ button > .toggler-icon {
   font-family: "Poppins", sans-serif;
 }
 
-.social-media-icons {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  list-style: none;
-  height: 20px;
-  width: 170px;
-  margin-left: -10px;
-}
-
-.social-media-icons li {
-  width: 17px;
-  padding: 10px;
-  padding-top: 0;
-  height: 14px;
-}
-
-.social-media-icons .twohandicon {
-  width: 14px;
-  height: 20px;
-}
-
-.social-media-icons .socialIcon {
-  padding-top: 1px;
-  width: 20px;
-  height: 19px;
-  padding-bottom: -2px;
-}
-
-.social-media-icons .git {
-  width: 18px;
-  height: 20px;
-}
-
-.social-media-icons .twitter {
-  width: 19px;
-  height: 19px;
-  padding: 0;
-}
 
 /* projects section starts */
 .my-individual-project {
@@ -327,12 +499,6 @@ button > .toggler-icon {
   margin: 4px;
 }
 
-/* about my self and skill list section */
-#wrapper-for-about-self-and-contact-form {
-  background-color: white;
-  border-top-right-radius: 6rem;
-}
-
 .about-myself-and-skill-list-section {
   margin-top: 20%;
   padding-bottom: 20%;
@@ -345,6 +511,58 @@ button > .toggler-icon {
   align-items: flex-start;
   padding: 0 7% 0 7%;
   margin-bottom: 2rem;
+}
+
+
+
+}
+
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  list-style: none;
+  height: 20px;
+  width: 170px;
+  margin-left: -10px;
+}
+
+.social-media-icons li {
+  width: 17px;
+  padding: 10px;
+  padding-top: 0;
+  height: 14px;
+}
+
+.social-media-icons .twohandicon {
+  width: 14px;
+  height: 20px;
+}
+
+.social-media-icons .socialIcon {
+  padding-top: 1px;
+  width: 20px;
+  height: 19px;
+  padding-bottom: -2px;
+}
+
+.social-media-icons .git {
+  width: 18px;
+  height: 20px;
+}
+
+.social-media-icons .twitter {
+  width: 19px;
+  height: 19px;
+  padding: 0;
+}
+
+
+/* about my self and skill list section */
+#wrapper-for-about-self-and-contact-form {
+  background-color: white;
+  border-top-right-radius: 6rem;
 }
 
 .languages-framework-skills {
