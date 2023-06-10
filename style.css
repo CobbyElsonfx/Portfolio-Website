@@ -1,11 +1,9 @@
 body {
   box-sizing: border-box;
   height: 100%;
-  width: 100%;
   background-color: #efefef;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  padding-left: 0;
 }
 
 h1 {
@@ -878,17 +876,16 @@ button:hover {
     background-color: #f7f7f9;
     border-radius: 8px;
     gap: 12px;
-    padding: 0.5rem 0 0.5rem 0.5rem;
+    padding: 0.5rem 0.1rem 0.5rem 0.5rem;
   }
-  
-  /* footer form  */
+
   #form-container {
     height: fit-content;
     border-top-left-radius: 6rem;
     background-color: #6060ff;
     margin-top: 0;
-    padding: 0 0 0 0;
-    background-image: url("./assets/contact\ form\ shapes-mobile.svg");
+    padding: 0;
+    background-image: url("./assets/contact form shapes-mobile.svg");
     background-repeat: no-repeat;
     background-position: right 10px top;
     background-position-x: right;
