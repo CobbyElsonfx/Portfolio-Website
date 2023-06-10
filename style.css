@@ -171,7 +171,6 @@ button:hover {
     font-family: "Poppins", sans-serif;
   }
 
-
   /* projects section starts */
   .my-individual-project {
     margin: auto;
@@ -360,7 +359,6 @@ button:hover {
     padding-bottom: unset;
   }
 
-
   /* languages frameworks and skills */
   .languages-framework-skills {
     display: flex;
@@ -431,7 +429,6 @@ button:hover {
     width: 23px;
     height: 24px;
   }
-
 
   /* icons  */
   .social-media-icons {
@@ -565,8 +562,6 @@ button:hover {
   }
 }
 
-
-
 /* for mobile screens */
 @media (width <= 768px) {
   .hamburger-btn {
@@ -653,7 +648,6 @@ button:hover {
     margin-bottom: 2px;
     font-family: "Poppins", sans-serif;
   }
-
 
   /* projects section starts */
   .my-individual-project {
@@ -886,10 +880,8 @@ button:hover {
     gap: 12px;
     padding: 0.5rem 0 0.5rem 0.5rem;
   }
-
-
+  
   /* footer form  */
-
   #form-container {
     height: fit-content;
     border-top-left-radius: 6rem;
