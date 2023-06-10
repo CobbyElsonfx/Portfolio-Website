@@ -74,7 +74,7 @@ button:hover {
   display: none;
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   .navbar .desktop-nav-items {
     display: block;
     display: flex;
@@ -114,7 +114,7 @@ button:hover {
     align-items: center;
   }
 
-  .header-and-headline-section .container-for-about-section {
+  .header-and-headline-section .container-for-about-section.headline {
     padding-top: 170px;
     padding-bottom: 150px;
     padding-right: 3px;
@@ -126,7 +126,7 @@ button:hover {
   }
 
   /* desktop intro version */
-  .header-and-headline-section .container-for-about-section .intro {
+  .header-and-headline-section .container-for-about-section .intro.headline {
     margin: 0;
     font-size: 48px;
     font-style: normal;
@@ -138,7 +138,7 @@ button:hover {
     flex: 1;
   }
 
-  .header-and-headline-section .container-for-about-section .profile {
+  .header-and-headline-section .container-for-about-section .profile.headline {
     font-size: 20px;
     line-height: 28px;
     font-style: normal;
@@ -149,7 +149,7 @@ button:hover {
     font-family: "Poppins", sans-serif;
   }
 
-  .about-section-item {
+  .about-section-item.headline {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -256,6 +256,10 @@ button:hover {
     margin: 15px 0 15px 0;
   }
 
+  .project-description p {
+    color: #344563;
+  }
+
   .project-description .sub-title {
     display: flex;
     flex-direction: row;
@@ -275,15 +279,21 @@ button:hover {
 
   .project-description .sub-title > span {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 24px;
     font-family: "Poppins", sans-serif;
+  }
+
+  .project-description .sub-title .sub-title-first-element {
+    color: #344563;
   }
 
   .project-description .sub-title > .dev-title,
   .year-produced {
     font-family: "Poppins", sans-serif;
-    color: #7a869a;
+    color: #6b778c;
+    font-size: 18px;
+    font-weight: 400;
   }
 
   .project-description .stacks {
@@ -320,9 +330,11 @@ button:hover {
     padding-top: 8%;
     height: 100%;
     display: flex;
-    width: 90%;
     justify-content: start;
     align-items: center;
+    width: 75%;
+    margin: auto;
+    gap: 20px;
   }
 
   .about-myself-and-skill-list-section .about-myself-section {
@@ -331,8 +343,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 2rem;
-    height: 80%;
+    margin: 0;
   }
 
   .about-myself-and-skill-list-section .container-for-about-section {
@@ -341,13 +352,12 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     margin: auto;
-    width: 65%;
   }
 
   .about-myself-and-skill-list-section .about-section-item .intro {
     font-weight: 700;
     font-size: 40px;
-    padding-bottom: 0;
+    padding: unset;
     margin: 0;
   }
 
@@ -355,6 +365,9 @@ button:hover {
     font-weight: 400;
     font-size: 16px;
     padding-bottom: unset;
+    max-width: 880px;
+    line-height: 24px;
+    color: #344563;
   }
 
   /* languages frameworks and skills */
@@ -398,6 +411,7 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
+    max-width: 314px;
   }
 
   .languages-list-items-container .languages-list-items div {
@@ -556,7 +570,7 @@ button:hover {
     height: 1px;
     border: none;
     background-color: #dfe1e6;
-    width: 100%;
+    width: 110%;
   }
 }
 
@@ -894,58 +908,66 @@ button:hover {
     align-items: center;
   }
 
-  #form-container > div {
+  #contact-form-bg-container {
     padding-top: 30%;
-    display: flex;
-    flex-direction: column;
     color: white;
     margin: 2rem;
-    gap: 15px;
     width: 80%;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 3%;
     margin-bottom: 0;
   }
 
-  #form-container > div p {
+  #contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-form-bg-container #contact-form-wrapper p {
     font-weight: 300;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
   }
 
-  #form-container form > ul {
+  #contact-form-wrapper h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  #contact-form ul {
+    align-self: center;
     display: flex;
     margin-top: 0;
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    justify-self: center;
     list-style: none;
     padding-left: 2px;
     width: 100%;
   }
 
-  #form-container div > form li {
+  #contact-form ul li {
     width: 100%;
   }
 
-  #form-container div > form input,
+  #contact-form ul li input,
   textarea {
     border-radius: 8px;
     border: 1px solid #cfd8dc;
     padding: 0.75rem;
     font-size: 17px;
     font-style: none;
-    width: 300px;
+    min-width: 300px;
   }
 
-  #form-container textarea {
+  #contact-form ul li textarea {
     font-size: 15px;
   }
 
-  #form-container form button {
+  #contact-form ul li button {
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -954,16 +976,8 @@ button:hover {
     border: none;
   }
 
-  #form-container div h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 40px;
-    margin: 0;
-  }
-
   #contact-form-footer-underline {
     margin: auto;
-    padding-left: 30%;
   }
 
   .separator {
