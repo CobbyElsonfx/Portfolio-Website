@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-weight: 700;
 }
@@ -29,7 +34,6 @@ button {
   border-width: 1px;
   border-radius: 6px;
   border-color: #396df2;
-  margin-top: 20px;
   font-style: normal;
   letter-spacing: 0.03em;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -80,7 +84,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 90px;
+    padding-right: 60px;
   }
 
   .navbar .desktop-nav-items li {
@@ -165,7 +169,7 @@ button:hover {
     align-self: self-start;
     text-decoration: none;
     margin-top: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     font-family: "Poppins", sans-serif;
   }
 
@@ -215,7 +219,7 @@ button:hover {
   .content-wrapper .project-snapshot > img {
     width: 100%;
     min-height: 370px;
-    padding-right: 0;
+    padding: 15px 0 15px 0;
   }
 
   .project-details {
@@ -225,6 +229,7 @@ button:hover {
 
   .project-details .card-button {
     margin-left: 2rem;
+    margin-top: 2rem;
   }
 
   .content-wrapper .project-details > .project-description.odd {
@@ -258,6 +263,7 @@ button:hover {
 
   .project-description p {
     color: #344563;
+    padding: 20px 0 0 0;
   }
 
   .project-description .sub-title {
@@ -300,7 +306,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0;
+    padding: 15px 0 0 0;
   }
 
   .project-description .stacks > li {
@@ -357,17 +363,21 @@ button:hover {
   .about-myself-and-skill-list-section .about-section-item .intro {
     font-weight: 700;
     font-size: 40px;
-    padding: unset;
+    padding-bottom: 20px;
     margin: 0;
   }
 
   .about-myself-and-skill-list-section .about-section-item .profile {
     font-weight: 400;
     font-size: 16px;
-    padding-bottom: unset;
     max-width: 880px;
     line-height: 24px;
     color: #344563;
+    margin-bottom: 1rem;
+  }
+
+  .about-myself-button {
+    margin: 2rem 0 1rem 0;
   }
 
   /* languages frameworks and skills */
@@ -380,7 +390,7 @@ button:hover {
   }
 
   .languages-framework-skills .list-title {
-    padding: 0;
+    padding: 10px 0 10px 0;
     margin: 0;
   }
 
@@ -390,6 +400,7 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    padding: 10px 0 10px 0;
   }
 
   .languages-framework-skills .list-title > li > img {
@@ -444,9 +455,9 @@ button:hover {
 
   /* icons  */
   .social-media-icons {
+    padding-top: 15px;
     display: flex;
     flex-direction: row;
-    padding: 0;
     list-style: none;
     height: 20px;
     width: 190px;
@@ -517,6 +528,7 @@ button:hover {
     line-height: 52px;
     text-align: center;
     color: white;
+    padding-bottom: 20px;
   }
 
   #contact-form-wrapper > p {
@@ -526,6 +538,7 @@ button:hover {
     line-height: 28px;
     text-align: center;
     color: white;
+    padding-bottom: 20px;
   }
 
   #contact-form-wrapper form > ul {
@@ -617,6 +630,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 2rem;
   }
 
   .container-for-about-section .intro {
@@ -627,6 +641,7 @@ button:hover {
     line-height: 50px;
     color: #172b4d;
     flex: 1;
+    word-wrap: break-word;
   }
 
   .container-for-about-section .profile {
@@ -635,7 +650,6 @@ button:hover {
     font-style: normal;
     color: #344563;
     flex: 1;
-    margin-bottom: 15px;
     font-family: "Poppins", sans-serif;
   }
 
@@ -645,7 +659,7 @@ button:hover {
     justify-content: flex-start;
   }
 
-  .about-section-item .break-name {
+  .about-section-item #break-name {
     display: none;
   }
 
@@ -656,8 +670,7 @@ button:hover {
     line-height: 24px;
     align-self: self-start;
     text-decoration: none;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 1rem;
     font-family: "Poppins", sans-serif;
   }
 
@@ -695,18 +708,24 @@ button:hover {
     padding: 10px;
   }
 
+  .my-individual-project .project-details p {
+    margin-bottom: 1rem;
+  }
+
   .my-individual-project .project-title {
     font-size: 32px;
     font-style: normal;
     font-weight: 900;
     line-height: 42px;
     font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
   }
 
   .my-individual-project .sub-title {
     display: flex;
     flex-direction: row;
     position: relative;
+    margin-bottom: 1rem;
   }
 
   .my-individual-project .sub-title > img {
@@ -743,6 +762,7 @@ button:hover {
     flex-direction: row;
     align-items: center;
     padding: 0;
+    margin-bottom: 0.5rem;
   }
 
   .social-media-icons li {
@@ -782,9 +802,9 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     padding: 0 7% 0 7%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
-
+  
   .social-media-icons {
     display: flex;
     flex-direction: row;
@@ -834,13 +854,17 @@ button:hover {
   .languages-list-items-container .languages-list-items > div > h2 {
     font-size: 15px;
     font-style: normal;
-    padding-top: 3%;
     font-weight: 500;
     color: #253858;
   }
 
   .languages-framework-skills .list-title {
     padding: 0 0 0 0;
+    margin: 10px 0 10px 0;
+  }
+
+  .languages-framework-skills .list-title .first-child-languages {
+    margin: 2rem 0 2rem 0;
   }
 
   .languages-framework-skills .list-title > li {
@@ -854,14 +878,14 @@ button:hover {
   .languages-framework-skills .list-title .arrowright {
     width: 8px;
     height: 14px;
-    padding: 2rem 2rem 0 0;
+    margin-top: 0.5rem;
   }
 
   .languages-framework-skills .list-title .arrowdown {
     transform: rotate(90deg);
     width: 8px;
     height: 14px;
-    padding: 6rem 0.5rem 0 0;
+    margin-top: 1rem;
   }
 
   .languages-framework-skills .list-title .arrowdown.desktop {
@@ -921,6 +945,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
 
   #contact-form-bg-container #contact-form-wrapper p {
@@ -985,6 +1010,6 @@ button:hover {
     height: 1px;
     border: none;
     background-color: #dfe1e6;
-    width: 80vw;
+    width: 85vw;
   }
 }
