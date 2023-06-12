@@ -23,16 +23,21 @@
             <span class="toggler-icon middle-bar"></span>
             <span class="toggler-icon bottom-bar"></span>
           </button>
+           <ul class="desktop-nav-items">
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+           </ul>
         </nav>
       </header>
       <section>
         <div class="about-section">
-          <div class="container-for-about-section">
+          <div class="container-for-about-section headline">
             <div class="about-section-item">
-              <h1 class="intro">I’m Cobby. Glad to see you!</h1>
+              <h1 class="intro headline">I’m Cobby.<br id="break-name"> Glad to see you!</h1>
             </div>
-            <div class="about-section-item">
-              <p class="profile">
+            <div class="about-section-item headline">
+              <p class="profile headline">
                 I’m a software developer! I can help you build a product ,
                 feature or website Look through some of my work and experience!
                 If you like what you see and have a project you need coded,
@@ -42,7 +47,7 @@
             <div class="about-section-item links">
               <a href="http://" class="lets-connect">LET’S CONNECT</a>
               <ul class="social-media-icons">
-                <li>
+                <li class="individual-icons">
                   <a href="#"
                     ><img
                       class="twitter"
@@ -50,7 +55,7 @@
                       alt="twitter"
                   /></a>
                 </li>
-                <li>
+                <li class="individual-icons">
                   <a href="#">
                     <img
                       class="link"
@@ -59,7 +64,7 @@
                     />
                   </a>
                 </li>
-                <li>
+                <li class="individual-icons">
                   <a href="#"
                     ><img
                       class="socialIcon"
@@ -67,12 +72,14 @@
                       alt="social"
                   /></a>
                 </li>
-                <li>
+                <li class="individual-icons">
                   <a href="#"
-                    ><img class="git" src="./assets/git.png" alt="git"
+                    ><img class="git"   
+                          src="./assets/git.png" 
+                          alt="git"
                   /></a>
                 </li>
-                <li>
+                <li class="individual-icons">
                   <a href="#"
                     ><img
                       class="twohandicon"
@@ -86,127 +93,282 @@
         </div>
       </section>
     </div>
+    <!-- desktop -->
     <section>
-      <div class="my-individual-project">
+      <div class="my-individual-project desktop">
         <div class="content-wrapper">
-          <div class="project-snaphot">
+          <div class="project-snapshot even">
+            <img src="./assets/Snapshoot Portfolio 3.png" alt="porfolio-snapshot" />
+          </div>
+          <div class="project-details">
+            <div class="project-description even">
+            <h2 class="project-title">Tonic</h2>
+            <div class="sub-title">
+              <span class="sub-title-first-element">CANOPY</span>
+              <img src="./assets/Counter.png" alt="counter" />
+              <span class="dev-title">Back End Dev</span>
+              <img src="./assets/Counter.png" alt="counter" />
+              <span class="year-produced">2021</span>
+            </div>
+            <p >
+              Experimental content creation feature that allows users to add to an existing story over the course of 
+              a day without spamming their friends.
+            </p>
+            <ul class="stacks">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+            </div>
+            <button class="card-button"  type="button">See Project</button>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- mobile -->
+    <section>
+      <div class="my-individual-project mobile">
+        <div class="content-wrapper">
+          <div class="project-snapshot even">
+            <img src="./assets/Snapshoot Portfolio.png" alt="porfolio-snapshot" />
+          </div>
+          <div class="project-details">
+            <div class="project-description even">
+            <h2 class="project-title">Tonic</h2>
+            <div class="sub-title">
+              <span class="sub-title-first-element">CANOPY</span>
+              <img src="./assets/Counter.png" alt="counter" />
+              <span class="dev-title">Back End Dev</span>
+              <img src="./assets/Counter.png" alt="counter" />
+              <span class="year-produced">2021</span>
+            </div>
+            <p >
+              Experimental content creation feature that allows users to add to an existing story over the course of 
+              a day without spamming their friends.
+            </p>
+            <ul class="stacks">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+            </div>
+            <button class="card-button"  type="button">See Project</button>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- desktop -->
+    <section>
+      <div class="my-individual-project desktop">
+        <div class="content-wrapper">
+          <div class="project-snapshot odd">
+            <img src="./assets/colorful.png" alt="porfolio-snapshot" />
+          </div>
+          <div class="project-details">
+            <div class="project-description odd">
+            <h2 class="project-title">Multi-Post Stories</h2>
+            <div class="sub-title">
+              <span class="sub-title-first-element">Facebook</span>
+              <img src="./assets/Counter.png" alt="counter" />
+              <span class="dev-title">Back End Dev</span>
+              <img src="./assets/Counter.png" alt="counter" />
+              <span class="year-produced">2021</span>
+            </div>
+            <p>
+              A smart assistant to make driving more 
+              safe, efficient,
+               and fun by unlocking your most expensive computer: your car.
+            </p>
+            <ul class="stacks">
+              <li>HTML</li>
+              <li>Ruby on rails</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+            </div>
+            <button class="card-button" type="button">See Project</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mobile -->
+    <section>
+      <div class="my-individual-project mobile">
+        <div class="content-wrapper">
+          <div class="project-snapshot odd">
+            <img src="./assets/Multi-post.png" alt="porfolio-snapshot" />
+          </div>
+          <div class="project-details">
+            <div class="project-description odd">
+            <h2 class="project-title">Multi-Post Stories</h2>
+            <div class="sub-title">
+              <span class="sub-title-first-element">CANOPY</span>
+              <img src="./assets/Counter.png" alt="counter" />
+              <span class="dev-title">Back End Dev</span>
+              <img src="./assets/Counter.png" alt="counter" />
+              <span class="year-produced">2021</span>
+            </div>
+            <p>
+              A smart assistant to make driving more 
+              safe, efficient,
+               and fun by unlocking your most expensive computer: your car.
+            </p>
+            <ul class="stacks">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+            </div>
+            <button class="card-button" type="button">See Project</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- desktop -->
+    <section>
+      <div class="my-individual-project desktop">
+        <div class="content-wrapper">
+          <div class="project-snapshot even">
             <img
               src="./assets/Snapshoot Portfolio.png"
               alt="porfolio-snapshot"
             />
           </div>
           <div class="project-details">
-            <h2 class="project-title">Tonic</h2>
-            <div class="sub-title">
-              <span>CANOPY</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="dev-title">Back End Dev</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="year-produced">2021</span>
+            <div class="project-description even">
+              <h2 class="project-title">Facebook 360</h2>
+              <div class="sub-title">
+                <span class="sub-title-first-element">Facebook</span>
+                <img src="./assets/Counter.png" alt="counter" />
+                <span class="dev-title">Back End Dev</span>
+                <img src="./assets/Counter.png" alt="counter" />
+                <span class="year-produced">2021</span>
+              </div>
+              <p>
+                A daily selection of privately personalized reads; no accounts or
+                sign-ups required.
+              </p>
+              <ul class="stacks">
+                <li>HTML</li>
+                <li>Ruby on rails</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
-            <p class="project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="stacks">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-            <button type="button">See Project</button>
+            <button class="card-button active" type="button">See Project</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mobile -->
+    <section>
+      <div class="my-individual-project mobile">
+        <div class="content-wrapper">
+          <div class="project-snapshot even">
+            <img
+              src="./assets/orange-project.png"
+              alt="porfolio-snapshot"
+            />
+          </div>
+          <div class="project-details">
+            <div class="project-description even">
+              <h2 class="project-title">Tonic</h2>
+              <div class="sub-title">
+                <span class="sub-title-first-element">CANOPY</span>
+                <img src="./assets/Counter.png" alt="counter" />
+                <span class="dev-title">Back End Dev</span>
+                <img src="./assets/Counter.png" alt="counter" />
+                <span class="year-produced">2021</span>
+              </div>
+              <p>
+                A daily selection of privately personalized reads; no accounts or
+                sign-ups required.
+              </p>
+              <ul class="stacks">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+            <button  class="card-button" type="button">See Project</button>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="my-individual-project">
+      <div class="my-individual-project desktop">
         <div class="content-wrapper">
-          <div class="project-snaphot">
+          <div class="project-snapshot odd">
             <img src="./assets/Multi-post.png" alt="porfolio-snapshot" />
           </div>
           <div class="project-details">
-            <h2 class="project-title">Multi-Post Stories</h2>
+            <div class="project-description odd">
+            <h2 class="project-title">Uber Navigation</h2>
             <div class="sub-title">
-              <span>CANOPY</span>
+              <span class="sub-title-first-element">Uber</span>
               <img src="./assets/Counter.png" alt="counter" />
               <span class="dev-title">Back End Dev</span>
               <img src="./assets/Counter.png" alt="counter" />
               <span class="year-produced">2021</span>
             </div>
-            <p class="project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+            <p>
+              Exploring the future of media in Facebook's first Virtual 
+              Reality app; a place to discover and 
+              enjoy 360 photos and videos on Gear VR.
             </p>
             <ul class="stacks">
               <li>HTML</li>
+              <li>Ruby on rails</li>
               <li>CSS</li>
               <li>Javascript</li>
             </ul>
-            <button type="button">See Project</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="my-individual-project">
-        <div class="content-wrapper">
-          <div class="project-snaphot">
-            <img src="./assets/orange-project.png" alt="porfolio-snapshot" />
-          </div>
-          <div class="project-details">
-            <h2 class="project-title">Tonic</h2>
-            <div class="sub-title">
-              <span>CANOPY</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="dev-title">Back End Dev</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="year-produced">2021</span>
             </div>
-            <p class="project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="stacks">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-            <button type="button">See Project</button>
+            <button class="card-button" type="button">See Project</button>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="my-individual-project">
+      <div class="my-individual-project mobile">
         <div class="content-wrapper">
-          <div class="project-snaphot">
+          <div class="project-snapshot odd">
             <img src="./assets/colorful.png" alt="porfolio-snapshot" />
           </div>
           <div class="project-details">
-            <h2 class="project-title">Multi-Post Stories</h2>
+            <div class="project-description odd">
+            <h2 class="project-title">
+              Multi-Post
+              Stories
+            </h2>
             <div class="sub-title">
-              <span>CANOPY</span>
+              <span class="sub-title-first-element">CANOPY</span>
               <img src="./assets/Counter.png" alt="counter" />
               <span class="dev-title">Back End Dev</span>
               <img src="./assets/Counter.png" alt="counter" />
               <span class="year-produced">2021</span>
             </div>
-            <p class="project-description">
-              A daily selection of privately personalized reads;
-               no accounts or
-              sign-ups required.
+            <p>
+              Exploring the future of media in Facebook's first Virtual 
+              Reality app; a place to discover and 
+              enjoy 360 photos and videos on Gear VR.
             </p>
             <ul class="stacks">
               <li>HTML</li>
               <li>CSS</li>
               <li>Javascript</li>
             </ul>
-            <button type="button">See Project</button>
+            </div>
+            <button class="card-button" type="button">See Project</button>
           </div>
         </div>
       </div>
     </section>
-
+    
+    <footer>
     <div id="wrapper-for-about-self-and-contact-form">
     <section>
       <div class="about-myself-and-skill-list-section">
@@ -226,12 +388,12 @@
             <div class="about-section-item links">
               <a href="http://" class="lets-connect">LET’S CONNECT</a>
               <ul class="social-media-icons">
-                <li>
+                <li class="individual-icons">
                   <a href="#"
                     ><img class="git" src="./assets/git.png" alt="git"
                   /></a>
                 </li>
-                <li>
+                <li class="individual-icons">
                   <a href="#">
                     <img
                       class="link"
@@ -240,7 +402,7 @@
                     />
                   </a>
                 </li>
-                <li>
+                <li class="individual-icons">
                   <a href="#"
                     ><img
                       class="twohandicon"
@@ -248,7 +410,7 @@
                       alt="my pub"
                   /></a>
                 </li>
-                <li>
+                <li class="individual-icons">
                   <a href="#"
                     ><img
                       class="twitter"
@@ -256,7 +418,7 @@
                       alt="twitter"
                   /></a>
                 </li>
-                <li>
+                <li class="individual-icons">
                   <a href="#"
                     ><img
                       class="socialIcon"
@@ -271,30 +433,35 @@
         </div>
         <div class="languages-framework-skills">
           <ul class="list-title">
-            <li>
-              <h2>Languages</h2>
-              <img class="arrowdown" src="./assets/arrowright.png" alt="" />
+            <li class="first-languare-style">
+              <h2 >Languages</h2>
+              <img class="arrowdown mobile" src="./assets/arrowright.png" alt="" />
+              <img class="arrowdown desktop" src="./assets/arrowdown.png" alt="" />
+
             </li>
-            <ul class="languages-list-items-container">
-              <li class="languages-list-items">
-                <div>
-                  <img src="./assets/Javascript_ellipse 1.png" alt="" />
-                  <h2>Javascript</h2>
-                </div>
-              </li>
-              <li class="languages-list-items">
-                <div>
-                    <img src="./assets/html_ellipse 1.png" alt="" />
-                  <h2>HTML</h2>
-                </div>
-              </li>
-              <li class="languages-list-items">
-                <div>
-                  <img src="./assets/cssecllipse.png" alt="" />
-                  <h2>CSS</h2>
-                </div>
-              </li>
-            </ul>
+            <li class="">
+              <ul class="languages-list-items-container">
+                <li class="languages-list-items">
+                  <div>
+                    <img src="./assets/Javascript_ellipse 1.png" alt="" />
+                    <h2>Javascript</h2>
+                  </div>
+                </li>
+                <li class="languages-list-items">
+                  <div>
+                      <img src="./assets/html_ellipse 1.png" alt="" />
+                    <h2>HTML</h2>
+                  </div>
+                </li>
+                <li class="languages-list-items">
+                  <div>
+                    <img src="./assets/cssecllipse.png" alt="" />
+                    <h2>CSS</h2>
+                  </div>
+                </li>
+              </ul>
+
+            </li>
           </ul>
           
           <ul class="list-title">
@@ -317,41 +484,47 @@
     </section>
 
     <section id="form-container">
-      <div>
-        <h2>Contact me</h2>
-        <p>
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it!
-        </p>
-      <form 
-        action="https://formspree.io/f/mdovrprr"
-        method="POST">
-        <ul>
-          <li>
-            <input type="text" maxlength="30"  placeholder="Lorem Ipsum" required />
-          </li>
-          <li>
-            <input type="email" placeholder="loremipsum@gmail.com" required />
-          </li>
-          <li>
-            <textarea
-              name="message"
-              cols="28"
-              rows="7"
-              maxlength="500"
-              required
-              placeholder="Write you message here..."
-            ></textarea>
-          </li>
-          <li>
-            <button type="submit">Get in touch</button>
-          </li>
-        </ul>
-      </form>
-      <img src="./assets/Shape.png" alt="bar">
+      <div id="contact-form-bg-container">
+        <div id="contact-form-wrapper">
+          <h2>Contact me</h2>
+          <p>
+            If you have an application you are interested in developing, a feature
+            that you need built or a project that needs coding. I’d love to help
+            with it!
+          </p>
+          <form 
+            action="https://formspree.io/f/mdovrprr"
+            method="POST"
+            id="contact-form"
+            >
+            <ul>
+              <li>
+                <input type="text" maxlength="30"  placeholder="Lorem Ipsum" required />
+              </li>
+              <li>
+                <input type="email" placeholder="loremipsum@gmail.com" required />
+              </li>
+              <li>
+                <textarea
+                  name="message"
+                  cols="28"
+                  rows="7"
+                  maxlength="500"
+                  required
+                  placeholder="Write you message here..."
+                  id="textarea"
+                ></textarea>
+              </li>
+              <li>
+                <button id="contact-form-button" type="button">Get in touch</button>
+              </li>
+            </ul>
+          </form>
+          <img id="contact-form-footer-underline" src="./assets/Shape.png" alt="bar">
+        </div>
       </div>
     </section>
     </div>
+  </footer>
   </body>
 </html>
