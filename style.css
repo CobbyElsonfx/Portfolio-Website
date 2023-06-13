@@ -67,7 +67,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: static;
+  position:static;
   padding-left: 6%;
   padding-right: 6%;
   margin-bottom: 6%;
