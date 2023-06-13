@@ -69,7 +69,7 @@
 
 > 
 
-- [[Live Demo Link](https://cobbyelsonfx.github.io/Portfolio-Website/)]()
+- [[Live Demo Link]()]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
