@@ -79,7 +79,7 @@
 
 > 
 
-### Prerequisites
+###  Prerequisites
 
 To successfully execute this project, the following prerequisites are required: Having a code editor such as Visual Studio, installing a Git version control system, downloading Node.js, and configuring a linter on your local computer.
 
