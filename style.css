@@ -23,6 +23,10 @@ li {
   list-style: none;
 }
 
+.desktop-nav-items a{
+  text-decoration: none;
+}
+
 button {
   padding: 10px 7px 10px 7px;
   font-weight: 500;
