@@ -43,10 +43,10 @@ button {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-button:hover {
+ button:not(.hamburger-btn):hover {
   background-color: #6070ff;
   color: white;
-}
+} 
 
 .active {
   background: #2230d2;
@@ -66,23 +66,18 @@ button:hover {
   text-decoration: none;
 }
 
-.navbar {
-  padding-top: 3%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: static;
-  padding-left: 6%;
-  padding-right: 6%;
-  margin-bottom: 6%;
-}
-
-/* hide the desttop nav items on smaller screens */
-.navbar .desktop-nav-items {
-  display: none;
-}
-
 @media (width > 768px) {
+  .navbar {
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 6%;
+  }
+
   .navbar .desktop-nav-items {
     display: block;
     display: flex;
@@ -187,12 +182,7 @@ button:hover {
     border-radius: 15px;
     background-color: white;
     width: 75%;
-    height: fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .my-individual-project.mobile {
-    display: none;
   }
 
   .my-individual-project .content-wrapper {
@@ -439,7 +429,7 @@ button:hover {
 
   .languages-list-items-container .languages-list-items h2 {
     font-size: 15px;
-    font-weight: 500px;
+    font-weight: 500;
     line-height: 20px;
   }
 
@@ -562,7 +552,7 @@ button:hover {
     border: 1px solid #cfd8dc;
     padding: 0.75rem;
     font-size: 17px;
-    font-style: none;
+    font-style: normal;
     width: 447px;
   }
 
@@ -593,6 +583,49 @@ button:hover {
 
 /* for mobile screens */
 @media (width <= 768px) {
+  .header {
+    height: 72px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 103;
+  }
+
+  .header-content {
+    width: 85%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #header-button {
+    z-index: 101;
+    background: none;
+  }
+
+  .header-nav {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 32px 12px;
+    background: rgb(43, 62, 233, 0.75);
+    background-blend-mode: lighten;
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    visibility: hidden;
+  }
+
+  .header-nav-active {
+    visibility: visible;
+  }
+
   .hamburger-btn {
     background: none;
     border: none;
@@ -601,17 +634,19 @@ button:hover {
     cursor: pointer;
   }
 
-  button > .toggler-icon {
-    display: block;
-    background-color: #6070ff;
-    width: 16px;
-    height: 2px;
-    margin-bottom: 4px;
+  .header-list {
+    padding: 32px 16px;
+    display: grid;
+    gap: 14px;
+  }
+
+  .header-list-item {
+    font-size: 32px;
     color: white;
+    font-weight: 600;
   }
 
   .about-section {
-    background-position: absolute;
     background-image: url("./assets//header-shapes\ mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 37.296875em;
@@ -625,10 +660,11 @@ button:hover {
     left: -7em;
     top: 10.75em;
     padding-bottom: 5px;
+    margin-top: 3rem;
   }
 
   .container-for-about-section {
-    padding-top: 70px;
+    padding-top: 80px;
     padding-left: 3px;
     padding-right: 3px;
     display: flex;
@@ -695,17 +731,12 @@ button:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .my-individual-project.desktop {
-    display: none;
-  }
-
   .my-individual-project .content-wrapper {
     padding: 15px 4px 15px 4px;
   }
 
   .my-individual-project .snapshot {
     padding: 0;
-    box-shadow: 2px;
   }
 
   .my-individual-project .project-details {
@@ -922,7 +953,6 @@ button:hover {
   }
 
   #form-container {
-    height: fit-content;
     border-top-left-radius: 6rem;
     background-color: #6060ff;
     margin-top: 0;
@@ -988,7 +1018,6 @@ button:hover {
     border: 1px solid #cfd8dc;
     padding: 0.75rem;
     font-size: 17px;
-    font-style: none;
     min-width: 300px;
   }
 

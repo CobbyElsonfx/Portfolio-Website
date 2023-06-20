@@ -15,19 +15,24 @@
 
 <body>
   <div class="header-and-headline-section" >
-    <header>
-      <nav class="navbar">
+    <header class="header">
+      <nav class="navbar header-content">
         <a href="#" class="logo">Cobby Elson</a>
-        <button type="button" class="hamburger-btn">
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
+        <button type="button" class="hamburger-btn " id="header-button">
+          <img
+							id="header-button-image"
+							class="header-toggle"
+							src="./assets/burguer.svg"
+							alt="Menu icon on the mobile version"
+						/>
         </button>
-        <ul class="desktop-nav-items">
-          <a href="#portfolio"><li>Portfolio</li></a>
-          <a href="#about"><li>About</li></a>
-          <a href="#form-container"><li>Contact</li></a>
-        </ul>
+        <div class="header-nav" id="header-nav">
+          <ul class="desktop-nav-items  header-nav-inactive header-list" >
+            <li ><a class="header-list-item" href="#portfolio">Portfolio</a></li>
+            <li ><a class="header-list-item" href="#about">About</a></li> 
+            <li ><a class="header-list-item" href="#form-container">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section>
@@ -70,43 +75,9 @@
       </div>
     </section>
   </div>
-  <!-- desktop -->
-  <section id="portfolio">
-    <div class="my-individual-project desktop">
-      <div class="content-wrapper">
-        <div class="project-snapshot even">
-          <img src="./assets/Snapshoot Portfolio 3.png" alt="Tonic" />
-        </div>
-        <div class="project-details">
-          <div class="project-description even">
-            <h2 class="project-title">Tonic</h2>
-            <div class="sub-title">
-              <span class="sub-title-first-element">CANOPY</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="dev-title">Back End Dev</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="year-produced">2021</span>
-            </div>
-            <p>
-              Experimental content creation feature that allows users to add to an existing story over the course of
-              a day without spamming their friends.
-            </p>
-            <ul class="stacks">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <button class="card-button" type="button">See Project</button>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- mobile -->
   <section>
-    <div class="my-individual-project mobile">
+    <div class="my-individual-project">
       <div class="content-wrapper">
         <div class="project-snapshot even">
           <img src="./assets/Snapshoot Portfolio.png" alt="Tonic" />
@@ -140,7 +111,7 @@
 
   <!-- desktop -->
   <section>
-    <div class="my-individual-project desktop">
+    <div class="my-individual-project">
       <div class="content-wrapper">
         <div class="project-snapshot odd">
           <img src="./assets/colorful.png" alt="Multi-Post Stories" />
@@ -162,7 +133,6 @@
             </p>
             <ul class="stacks">
               <li>HTML</li>
-              <li>Ruby on rails</li>
               <li>CSS</li>
               <li>Javascript</li>
             </ul>
@@ -172,42 +142,10 @@
       </div>
     </div>
   </section>
-  <!-- mobile -->
-  <section>
-    <div class="my-individual-project mobile">
-      <div class="content-wrapper">
-        <div class="project-snapshot odd">
-          <img src="./assets/Multi-post.png" alt="Multi-Post Stories" />
-        </div>
-        <div class="project-details">
-          <div class="project-description odd">
-            <h2 class="project-title">Multi-Post Stories</h2>
-            <div class="sub-title">
-              <span class="sub-title-first-element">CANOPY</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="dev-title">Back End Dev</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="year-produced">2021</span>
-            </div>
-            <p>
-              A smart assistant to make driving more
-              safe, efficient,
-              and fun by unlocking your most expensive computer: your car.
-            </p>
-            <ul class="stacks">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <button class="card-button" type="button">See Project</button>
-        </div>
-      </div>
-    </div>
-  </section>
+ 
   <!-- desktop -->
   <section>
-    <div class="my-individual-project desktop">
+    <div class="my-individual-project">
       <div class="content-wrapper">
         <div class="project-snapshot even">
           <img src="./assets/Snapshoot Portfolio.png" alt="Facebook 360" />
@@ -230,7 +168,6 @@
               <li>HTML</li>
               <li>Ruby on rails</li>
               <li>CSS</li>
-              <li>Javascript</li>
             </ul>
           </div>
           <button class="card-button active" type="button">See Project</button>
@@ -238,40 +175,8 @@
       </div>
     </div>
   </section>
-  <!-- mobile -->
   <section>
-    <div class="my-individual-project mobile">
-      <div class="content-wrapper">
-        <div class="pTonic">
-          <img src="./assets/orange-project.png" alt="Tonic" />
-        </div>
-        <div class="project-details">
-          <div class="project-description even">
-            <h2 class="project-title">Tonic</h2>
-            <div class="sub-title">
-              <span class="sub-title-first-element">CANOPY</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="dev-title">Back End Dev</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="year-produced">2021</span>
-            </div>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="stacks">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <button class="card-button" type="button">See Project</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="my-individual-project desktop">
+    <div class="my-individual-project">
       <div class="content-wrapper">
         <div class="project-snapshot odd">
           <img src="./assets/Multi-post.png" alt="Uber Navigation" />
@@ -293,7 +198,6 @@
             </p>
             <ul class="stacks">
               <li>HTML</li>
-              <li>Ruby on rails</li>
               <li>CSS</li>
               <li>Javascript</li>
             </ul>
@@ -303,43 +207,6 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="my-individual-project mobile">
-      <div class="content-wrapper">
-        <div class="project-snapshot odd">
-          <img src="./assets/colorful.png" alt="Multi-Post
-            Stories" />
-        </div>
-        <div class="project-details">
-          <div class="project-description odd">
-            <h2 class="project-title">
-              Multi-Post
-              Stories
-            </h2>
-            <div class="sub-title">
-              <span class="sub-title-first-element">CANOPY</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="dev-title">Back End Dev</span>
-              <img src="./assets/Counter.png" alt="counter" />
-              <span class="year-produced">2021</span>
-            </div>
-            <p>
-              Exploring the future of media in Facebook's first Virtual
-              Reality app; a place to discover and
-              enjoy 360 photos and videos on Gear VR.
-            </p>
-            <ul class="stacks">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <button class="card-button" type="button">See Project</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer>
     <div id="wrapper-for-about-self-and-contact-form">
       <section id="about">
@@ -469,6 +336,8 @@
       </section>
     </div>
   </footer>
+
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
