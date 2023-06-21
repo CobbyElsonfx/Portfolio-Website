@@ -43,10 +43,10 @@ button {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
- button:not(.hamburger-btn):hover {
+button:not(.hamburger-btn):hover {
   background-color: #6070ff;
   color: white;
-} 
+}
 
 .active {
   background: #2230d2;
