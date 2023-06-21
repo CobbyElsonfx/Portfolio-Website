@@ -5,12 +5,12 @@ const navigationMenu = document.querySelector('#header-nav');
 const navigationLinks = document.querySelectorAll('.header-list-item');
 
 function toggleNavigation() {
-	navigationMenu.classList.toggle('header-nav-active');
-  }
+  navigationMenu.classList.toggle('header-nav-active');
+}
 
-  function changeButtonIcon(path) {
-	buttonImage.src = path;
-  }
+function changeButtonIcon(path) {
+  buttonImage.src = path;
+}
 const navigationIcons = ['./assets/burguer.svg', './assets/x-icon.svg'];
 navigationLinks.forEach((element) => {
   element.addEventListener('click', () => {
@@ -32,7 +32,6 @@ buttonMenu.addEventListener('click', () => {
   }
   toggleNavigation();
 });
-
 
 // pop up window
 
@@ -85,7 +84,6 @@ const portfolioArray = [
 
 const bodyElement = document.querySelector('#body');
 const portfolioButtons = document.querySelectorAll('.card-button');
-
 
 function showWorkContent(element) {
   bodyElement.appendChild(element);
@@ -169,11 +167,3 @@ portfolioButtons.forEach((button) => {
     createWorkWindow(index);
   });
 });
-
-
-
-
-
-
-
-
