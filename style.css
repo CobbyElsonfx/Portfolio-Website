@@ -11,6 +11,10 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-weight: 700;
 }
@@ -27,7 +31,8 @@ li {
   text-decoration: none;
 }
 
-button {
+button,
+.card-button {
   padding: 10px 7px 10px 7px;
   font-weight: 500;
   font-size: 17px;
@@ -43,7 +48,21 @@ button {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+.close-button {
+  border-style: none;
+}
+
 button:not(.hamburger-btn):hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.counter {
+  width: 8px;
+  height: 8px;
+}
+
+.card-button:hover {
   background-color: #6070ff;
   color: white;
 }
@@ -99,22 +118,23 @@ button:not(.hamburger-btn):hover {
 
   .header-and-headline-section {
     background-color: #fff;
-    border-bottom-left-radius: 6rem;
     width: 100vw;
     height: 100vh;
     padding-bottom: 10rem;
   }
 
   .header-and-headline-section .about-section {
-    top: 20%;
-    left: 1%;
-    position: absolute;
+    top: 2%;
+    left: 0;
+    position: relative;
+    background-color: white;
     background-image: url("./assets/backgroundImage.png");
     background-repeat: no-repeat;
-    background-size: 95% 42rem;
-    padding: 0 0 10rem 0;
+    background-size: 92% 37rem;
     display: flex;
     align-items: center;
+    border-bottom-left-radius: 6rem;
+    background-position: center;
   }
 
   .header-and-headline-section .container-for-about-section.headline {
@@ -173,154 +193,265 @@ button:not(.hamburger-btn):hover {
   }
 
   /* projects section starts */
-  .my-individual-project {
-    margin: auto;
-    position: relative;
-    margin-top: 10%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-radius: 15px;
-    background-color: white;
-    width: 75%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  .portfolio-wrapper {
+    width: 98%;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    height: 100%;
   }
 
-  .my-individual-project .content-wrapper {
+  .individual-portfolio {
     display: grid;
-    gap: 20px;
+    gap: 6.4em;
+    justify-content: center;
+    padding: calc(5em + 3vw) 0;
+    width: 85%;
+    margin: auto;
+  }
+
+  .portfolio-card {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 400px;
-    position: relative;
-    padding: 0;
+    height: 496px;
+    gap: 46px;
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    background-color: white;
+    border: 1px solid #dfe1e6;
+    transition: box-shadow 0.1s ease-in, border-color 0.1s ease-in;
   }
 
-  .content-wrapper .project-snapshot.odd {
-    grid-column: 2/3;
-    grid-row: 1/ span 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .content-wrapper .project-snapshot.even {
-    grid-column: 1/2;
-    grid-row: 1/ span 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .content-wrapper .project-snapshot > img {
-    width: 100%;
-    min-height: 370px;
-    padding: 15px 0 15px 0;
-  }
-
-  .project-details {
-    padding: 0;
-    justify-content: start;
-  }
-
-  .project-details .card-button {
-    margin-left: 2rem;
-    margin-top: 2rem;
-  }
-
-  .content-wrapper .project-details > .project-description.odd {
-    grid-column: 1/2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem 0 0 2rem;
-  }
-
-  .content-wrapper .project-details > .project-description.even {
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem 0 0 2rem;
-  }
-
-  .project-description {
-    height: 70%;
-  }
-
-  .project-description h2 {
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    font-family: "Poppins", sans-serif;
-    margin: 15px 0 15px 0;
-  }
-
-  .project-description p {
-    color: #344563;
-    padding: 20px 0 0 0;
-  }
-
-  .project-description .sub-title {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    padding: 0 0 10px 0;
-    margin: 0;
-  }
-
-  .project-description .sub-title > img {
-    width: 8px;
-    height: 8px;
-    align-self: center;
-    padding-bottom: 2px;
-    padding-left: 7px;
-    padding-right: 7px;
-  }
-
-  .project-description .sub-title > span {
-    font-size: 18px;
+  .portfolio-item {
     font-weight: 400;
-    line-height: 24px;
-    font-family: "Poppins", sans-serif;
+    color: #7a869a;
   }
 
-  .project-description .sub-title .sub-title-first-element {
-    color: #344563;
+  .portfolio-card:hover {
+    box-shadow: 0 10px 50px 10px  #dfe1e6;
+    border-color: #a7aeff;
   }
 
-  .project-description .sub-title > .dev-title,
-  .year-produced {
-    font-family: "Poppins", sans-serif;
-    color: #6b778c;
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .project-description .stacks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 0 0 0;
-  }
-
-  .project-description .stacks > li {
-    background-color: #ebebff;
-    min-width: 50px;
-    height: 16px;
-    padding: 4px;
-    font-family: "Poppins", sans-serif;
+  .portfolio-image {
+    height: 97%;
+    object-fit: cover;
     border-radius: 8px;
+    max-width: 100%;
+  }
+
+  .portfolio-tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75em;
+    font-size: 12px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 1em 0 0 0;
+  }
+
+  .portfolio-tag {
+    color: #6070ff;
+    background-color: #ebebff;
     font-weight: 500;
+    padding: 0.25em 1em;
+    border-radius: 8px;
+  }
+
+  .portfolio-content {
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 1.5em;
+    gap: 0.1em;
+    margin: 0.5em 0;
+  }
+
+  .portfolio-title {
+    font-size: 40px;
+    color: #172b4d;
+    line-height: 44px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7em;
+    flex-wrap: wrap;
+    line-height: 0.001;
+    list-style-type: disc;
+    align-items: center;
+  }
+
+  .grid-uneven-one {
+    grid-template-columns: 40% 60%;
+  }
+
+  .grid-uneven-two {
+    grid-template-columns: 60% 40%;
+  }
+
+  .grid-two-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-three-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-four-columns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-reversed {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .portfolio-profile {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    margin: 0.75em 0;
+  }
+
+  .portfolio-actions {
+    margin-top: 1rem;
+  }
+
+  /* popup window */
+  .modal {
+    background: rgba(74, 88, 105, 0.25);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    display: grid;
+    place-items: center;
+    padding: 1em;
+  }
+
+  .modal-card {
+    padding: 2em;
+    background-color: white;
+    border-radius: 16px;
+    width: 87%;
+  }
+
+  .modal-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .modal-title {
+    font-size: 40px;
+    color: #172b4d;
+  }
+
+  .modal-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  .modal-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: disc;
+    gap: 1.8em;
+    color: #c1c7d0;
+    align-items: center;
+  }
+
+  .modal-item {
+    color: #7a869a;
+    font-weight: 500;
+  }
+
+  .modal-image {
+    border-radius: 0;
+    height: 586px;
+    margin-bottom: 1em;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .modal-details {
+    display: grid;
+    gap: 0.75em;
+    padding: 0.25em 0;
+  }
+
+  .modal-details.inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-description {
+    font-size: 15px;
+    color: #344563;
+  }
+
+  .modal-tags {
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .modal-tag {
+    align-items: center;
+    border-radius: 8px;
     font-size: 12px;
     color: #6070ff;
+    padding: 4px 12px;
+    background-color: #ebebff;
+  }
+
+  .modal hr {
+    height: 1px;
+    background-color: #dfe1e6;
+    border: none;
+  }
+
+  .modal-actions {
+    gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
     text-align: center;
-    margin: 4px;
+    background: none;
+    font-size: 15px;
+    gap: 10px;
+    margin: 0.75em 0 0 0;
+    padding: 12px 14px 12px 14px;
+    border: 1px solid #6070ff;
+    color: #396df2;
+    border-radius: 8px;
   }
 
   /* about my self and skills list section */
-
   #wrapper-for-about-self-and-contact-form {
-    margin-top: 10rem;
     background-color: white;
     border-top-right-radius: 6rem;
   }
@@ -446,7 +577,7 @@ button:not(.hamburger-btn):hover {
     width: 23px;
     height: 24px;
   }
-  
+
   .social-media-icons {
     padding-top: 15px;
     display: flex;
@@ -490,7 +621,7 @@ button:not(.hamburger-btn):hover {
   /* footer form */
   #form-container {
     background-color: #6060ff;
-    height: 95vh;
+    height: 99vh;
     width: 100vw;
     border-top-left-radius: 6rem;
     padding-top: 5rem;
@@ -584,9 +715,8 @@ button:not(.hamburger-btn):hover {
 @media (width <= 768px) {
   .header {
     height: 72px;
+    width: 100vw;
     position: fixed;
-    left: 0;
-    right: 0;
     top: 0;
     background-color: white;
     z-index: 103;
@@ -628,6 +758,7 @@ button:not(.hamburger-btn):hover {
   .hamburger-btn {
     background: none;
     border: none;
+    border-style: none;
     padding: 0;
     padding-right: 6%;
     cursor: pointer;
@@ -643,6 +774,159 @@ button:not(.hamburger-btn):hover {
     font-size: 32px;
     color: white;
     font-weight: 600;
+  }
+
+  /* POPUP WINDOW */
+  .modal {
+    background: rgba(75, 88, 105, 0.25);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    display: grid;
+    place-items: center;
+    overflow: auto;
+    padding: 1em;
+  }
+
+  .modal-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .modal-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 1em;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+  }
+
+  .modal-title {
+    font-size: 30px;
+    color: #172b4d;
+  }
+
+  .modal-content {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  .modal-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+    gap: 1em;
+  }
+
+  .modal-profile h3 {
+    text-transform: uppercase;
+  }
+
+  .modal-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: disc;
+    gap: 1em;
+    color: #c1c7d0;
+    align-items: center;
+  }
+
+  .modal-item {
+    color: #7a869a;
+    font-weight: 600;
+  }
+
+  .modal-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .modal-details {
+    display: grid;
+    gap: 1.35em;
+    padding: 0.25em 0;
+  }
+
+  .modal-details.inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-description {
+    font-size: 15px;
+    color: #344563;
+    font-weight: 400;
+  }
+
+  .modal-tags {
+    gap: 0.5em;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .modal-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #6070ff;
+    padding: 4px 12px;
+    background-color: #ebebff;
+  }
+
+  .modal-actions {
+    gap: 0.25em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal-divider {
+    height: 0.1px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    background-color: #ebecf0;
+  }
+
+  .modal-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    background: none;
+    font-size: 15px;
+    gap: 10px;
+    margin: 0.75em 0 0 0;
+    padding: 12px 14px 12px 14px;
+    border: 1px solid #6070ff;
+    color: #396df2;
+    border-radius: 8px;
+  }
+
+  #close-modal-button {
+    display: inline;
+    float: right;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    color: #67798e;
+    border-style: none;
   }
 
   .about-section {
@@ -713,111 +997,95 @@ button:not(.hamburger-btn):hover {
     font-family: "Poppins", sans-serif;
   }
 
-  /* projects section starts */
-  .my-individual-project {
-    margin: auto;
-    position: relative;
-    margin-top: 20%;
-    padding-left: 2%;
-    padding-right: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-    justify-content: space-evenly;
-    background-color: white;
+  /* PORTFOLIO STYLING */
+  .individual-portfolio {
+    display: grid;
+    justify-content: center;
+    gap: 5.4em;
     width: 85%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    height: 100%;
+    padding: calc(5em + 3vw) 0;
   }
 
-  .my-individual-project .content-wrapper {
-    padding: 15px 4px 15px 4px;
+  .portfolio-card {
+    display: grid;
+    background-color: white;
+    padding: 16px;
+    border-radius: 16px;
+    gap: 0.25em;
+    border: 1px solid  #dfe1e6;
   }
 
-  .my-individual-project .snapshot {
-    padding: 0;
+  .portfolio-image {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
   }
 
-  .my-individual-project .project-details {
-    padding: 10px;
+  .portfolio-content {
+    display: grid;
+    margin: 0.5em 0;
   }
 
-  .my-individual-project .project-details p {
-    margin-bottom: 1rem;
-  }
-
-  .my-individual-project .project-title {
+  .portfolio-title {
     font-size: 32px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 42px;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 1rem;
+    line-height: 44px;
+    color: #172b4d;
   }
 
-  .my-individual-project .sub-title {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-bottom: 1rem;
-  }
-
-  .my-individual-project .sub-title > img {
-    width: 8px;
-    height: 8px;
-    align-self: center;
-    padding-bottom: 2px;
-    padding-left: 7px;
-    padding-right: 7px;
-  }
-
-  .my-individual-project .sub-title > span {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 12px;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .my-individual-project .sub-title > .dev-title,
-  .year-produced {
-    font-family: "Poppins", sans-serif;
-    color: #7a869a;
-  }
-
-  .my-individual-project .project-description {
-    font-size: 15px;
-    line-height: 25px;
-    font-family: "Poppins", sans-serif;
-    word-wrap: break-word;
-  }
-
-  .my-individual-project .stacks {
+  .portfolio-profile {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0;
-    margin-bottom: 0.5rem;
+    gap: 2em;
+    font-size: 13px;
+    margin: 0.75em 0;
   }
 
-  .social-media-icons li {
-    width: 17px;
-    padding: 10px;
-    padding-top: 0;
-    height: 14px;
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+    line-height: 0.001;
+    list-style-type: disc;
+    align-items: center;
   }
 
-  .my-individual-project .stacks > li {
-    background-color: #ebebff;
-    min-width: 50px;
-    height: 16px;
-    padding: 2px 4px 8px 4px;
-    font-family: "Poppins", sans-serif;
-    border-radius: 8px;
-    font-weight: 500;
+  .portfolio-description {
+    color: #344563;
+    font-size: 15px;
+    margin: 0 0 1em 0;
+  }
+
+  .portfolio-item {
+    color: #7a869a;
+    font-weight: 600;
+  }
+
+  .portfolio-tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75em;
     font-size: 12px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 1em 0 0 0;
+  }
+
+  .portfolio-tag {
     color: #6070ff;
-    text-align: center;
-    margin: 4px;
+    background-color: #ebebff;
+    font-weight: 500;
+    padding: 0.25em 1em;
+    border-radius: 8px;
+  }
+
+  .portfolio-button {
+    margin-top: 1rem;
   }
 
   #wrapper-for-about-self-and-contact-form {
@@ -842,11 +1110,12 @@ button:not(.hamburger-btn):hover {
   .social-media-icons {
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding-left: 10px;
     list-style: none;
     height: 20px;
     width: 170px;
     margin-left: -10px;
+    gap: 1rem;
   }
 
   .social-media-icons .twohandicon {
@@ -873,7 +1142,6 @@ button:not(.hamburger-btn):hover {
   }
 
   /* about my self and skill list section */
-
   .languages-framework-skills {
     display: flex;
     flex-direction: column;
