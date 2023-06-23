@@ -363,7 +363,7 @@ button:not(.hamburger-btn):hover {
     gap: 2em;
     font-size: 15px;
     font-weight: 500;
-    margin: .5em 0 .5em 0;
+    margin: 0.5em 0 0.5em 0;
   }
 
   .modal-list {
