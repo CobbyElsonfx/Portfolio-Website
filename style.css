@@ -446,9 +446,7 @@ button:not(.hamburger-btn):hover {
     border-radius: 8px;
   }
 
-
   /* about my self and skills list section */
-
   #wrapper-for-about-self-and-contact-form {
     background-color: white;
     border-top-right-radius: 6rem;
