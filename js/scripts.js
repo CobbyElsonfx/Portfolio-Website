@@ -247,3 +247,29 @@ function addPortfolioWork() {
 
 // Called  the Function to fill the PortfolioElement.
 addPortfolioWork();
+
+// form validation
+const form = document.getElementById("contact-form")
+form.addEventListener("submit",(event)=>{
+  console.log("submitted successfully")
+ 
+
+  const message = "Email format should be in lower case"
+  const usernameInput = document.getElementById("username")
+  const emailInput = document.getElementById("email").value
+  const textArea = document.getElementById("textarea")
+  const errorMessage = document.getElementById("error-message")
+  const emailLowerCase = emailInput.toLowerCase()
+
+  if(emailInput === emailLowerCase){
+    errorMessage.textContent = ""
+    form.submit()
+  }else{
+    event.preventDefault()
+    errorMessage.textContent = message 
+  }
+  
+
+  console.log(emailInput)
+
+})
