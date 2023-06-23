@@ -205,6 +205,8 @@ button:not(.hamburger-btn):hover {
     gap: 6.4em;
     justify-content: center;
     padding: calc(5em + 3vw) 0;
+    width: 85%;
+    margin: auto;
   }
 
   .portfolio-card {
@@ -361,6 +363,7 @@ button:not(.hamburger-btn):hover {
     gap: 2em;
     font-size: 15px;
     font-weight: 500;
+    margin: .5em 0 .5em 0;
   }
 
   .modal-list {
@@ -370,6 +373,7 @@ button:not(.hamburger-btn):hover {
     list-style-type: disc;
     gap: 1.8em;
     color: #c1c7d0;
+    align-items: center;
   }
 
   .modal-item {
