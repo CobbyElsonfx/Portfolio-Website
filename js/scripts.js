@@ -249,18 +249,10 @@ function addPortfolioWork() {
 addPortfolioWork();
 
 // FORM VALIDATION
-// function to convert the content of the email field  to be in lower case
-function convertToLower(formType) {
-  formType.onkeyup = (() => {
-    formType.value = formType.value.toLowerCase();
-    return formType.value;
-  });
-}
-
 const emailInput = document.getElementById('email');
 const errorMessage = document.getElementById('error-message');
 
-convertToLower(emailInput);
+// convertToLower(emailInput);
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
