@@ -247,3 +247,27 @@ function addPortfolioWork() {
 
 // Called  the Function to fill the PortfolioElement.
 addPortfolioWork();
+
+// FORM VALIDATION
+// function to convert the content of the email field  to be in lower case
+const emailInput = document.getElementById('email');
+const errorMessage = document.getElementById('error-message');
+
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const emailLowerCase = emailInput.value.toLowerCase();
+  const message = 'Email must be in lowercase';
+  // If the validation is OK, the form is sent.
+  if (emailInput.value === emailLowerCase) {
+    errorMessage.textContent = '';
+    form.submit();
+  } else {
+    // f the validation is not OK, an  error message is
+    // shown to the user near the submit button informing
+    // them of the error and the form is not sent.
+    event.preventDefault();
+    errorMessage.textContent = message;
+  }
+});
