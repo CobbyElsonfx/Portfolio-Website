@@ -248,28 +248,33 @@ function addPortfolioWork() {
 // Called  the Function to fill the PortfolioElement.
 addPortfolioWork();
 
-// form validation
-const form = document.getElementById("contact-form")
-form.addEventListener("submit",(event)=>{
-  console.log("submitted successfully")
- 
+// FORM VALIDATION
+// function to convert the content of the email field  to be in lower case
+function convertToLower(formType) {
+  formType.onkeyup = (() => {
+    formType.value = formType.value.toLowerCase();
+    return formType.value;
+  });
+}
 
-  const message = "Email format should be in lower case"
-  const usernameInput = document.getElementById("username")
-  const emailInput = document.getElementById("email").value
-  const textArea = document.getElementById("textarea")
-  const errorMessage = document.getElementById("error-message")
-  const emailLowerCase = emailInput.toLowerCase()
+const emailInput = document.getElementById('email');
+const errorMessage = document.getElementById('error-message');
 
-  if(emailInput === emailLowerCase){
-    errorMessage.textContent = ""
-    form.submit()
-  }else{
-    event.preventDefault()
-    errorMessage.textContent = message 
+convertToLower(emailInput);
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const emailLowerCase = emailInput.value.toLowerCase();
+  const message = 'Email must be in lowercase';
+  // If the validation is OK, the form is sent.
+  if (emailInput.value === emailLowerCase) {
+    errorMessage.textContent = '';
+    form.submit();
+  } else {
+    // f the validation is not OK, an  error message is
+    // shown to the user near the submit button informing them of the error and the form is not sent.
+    event.preventDefault();
+    errorMessage.textContent = message;
   }
-  
-
-  console.log(emailInput)
-
-})
+});

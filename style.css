@@ -28,8 +28,7 @@ li {
 }
 
 #error-message {
-color: red;
-box-shadow: 1px black;
+  color: rgb(100, 5, 5);
 }
 
 .desktop-nav-items a {
