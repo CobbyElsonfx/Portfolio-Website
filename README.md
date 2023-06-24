@@ -60,11 +60,17 @@
 > 
 
 
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-### Prerequisites
+
+> 
+
+###  Prerequisites
+
 
 To successfully execute this project, the following prerequisites are required: Having a code editor such as Visual Studio, installing a Git version control system, downloading Node.js, and configuring a linter on your local computer.
 
