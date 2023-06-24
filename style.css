@@ -28,6 +28,7 @@ li {
 }
 
 #error-message {
+  text-decoration: underline;
   color: rgb(100, 5, 5);
 }
 
