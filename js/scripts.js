@@ -274,43 +274,33 @@ form.addEventListener('submit', (event) => {
 
 // LOCAL STORAGE
 
-  // Function: InjectFormData()
-  // Put the information contained within the LocalStorage item called userData if the object exist.
-  // userData contains name, email and message.
-  const inputFields = document.querySelectorAll('.input');
-  function injectFormData() {
-    const object = JSON.parse(localStorage.getItem('userData'));
-    if (object) {
-      inputFields.forEach((input) => {
-        const value = object[input.id];
-        input.value = value;
-      });
-    }
-  }
-
-  // Function: createLocalStorage()
-  // Create a FormData object which contains every single Input from the actual Form matching his
-  // key with his own value then it creates the new localStorage item called userData
-  // userData contains name, email and message.
-  const userData = {};
-  function createLocalStorage(form) {
-    const formData = new FormData(form);
-
-    // UserData: Single Data Object.
-    userData.name = formData.get('username');
-    userData.email = formData.get('email');
-    userData.message = formData.get('message');
-
-    localStorage.setItem('userData', JSON.stringify(userData));
-  }
-
-  // InputFields: Form input elements.
-  // Update in real-time the information container within the localStorage item.
-  // userData contains name, email and message.
-  inputFields.forEach((input) => {
-    input.addEventListener('input', () => {
-      createLocalStorage(form);
+const inputFields = document.querySelectorAll('.input');
+function injectFormData() {
+  const object = JSON.parse(localStorage.getItem('userData'));
+  if (object) {
+    inputFields.forEach((input) => {
+      const value = object[input.id];
+      input.value = value;
     });
-  });
+  }
+}
 
-  injectFormData();
+const userData = {};
+function createLocalStorage(form) {
+  const formData = new FormData(form);
+
+  // UserData: Single Data Object.
+  userData.name = formData.get('username');
+  userData.email = formData.get('email');
+  userData.message = formData.get('message');
+
+  localStorage.setItem('userData', JSON.stringify(userData));
+}
+
+inputFields.forEach((input) => {
+  input.addEventListener('input', () => {
+    createLocalStorage(form);
+  });
+});
+
+injectFormData();
