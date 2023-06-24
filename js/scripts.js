@@ -273,7 +273,8 @@ form.addEventListener('submit', (event) => {
     form.submit();
   } else {
     // f the validation is not OK, an  error message is
-    // shown to the user near the submit button informing them of the error and the form is not sent.
+    // shown to the user near the submit button informing 
+    //them of the error and the form is not sent.
     event.preventDefault();
     errorMessage.textContent = message;
   }
