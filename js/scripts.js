@@ -249,10 +249,10 @@ function addPortfolioWork() {
 addPortfolioWork();
 
 // FORM VALIDATION
-// function to convert the content of the email field  to be in lower case
 const emailInput = document.getElementById('email');
 const errorMessage = document.getElementById('error-message');
 
+// convertToLower(emailInput);
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -271,3 +271,36 @@ form.addEventListener('submit', (event) => {
     errorMessage.textContent = message;
   }
 });
+
+// LOCAL STORAGE
+
+const inputFields = document.querySelectorAll('.input');
+function injectFormData() {
+  const object = JSON.parse(localStorage.getItem('userData'));
+  if (object) {
+    inputFields.forEach((input) => {
+      const value = object[input.id];
+      input.value = value;
+    });
+  }
+}
+
+const userData = {};
+function createLocalStorage(form) {
+  const formData = new FormData(form);
+
+  // UserData: Single Data Object.
+  userData.name = formData.get('username');
+  userData.email = formData.get('email');
+  userData.message = formData.get('message');
+
+  localStorage.setItem('userData', JSON.stringify(userData));
+}
+
+inputFields.forEach((input) => {
+  input.addEventListener('input', () => {
+    createLocalStorage(form);
+  });
+});
+
+injectFormData();
